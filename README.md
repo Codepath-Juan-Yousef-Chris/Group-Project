@@ -1,6 +1,10 @@
 # Group-Project
 Group project for CodepathU
 
+The App
+SFArtOpenings is an app that allows the user to find current and upcoming art openings and ongoing art exhibits in San Francisco. It allows users to get directions to events,  to chat with others at the event and to leave reviews
+
+
 Required User Stories:
 - [ ] User can view a TableView of art gallery opening receptions currently happening in San Francisco from Parse reflecting Alan Bamberger’s Art Business.com “San Francisco Art Openings Calendar.”
 - [ ] In the event list, user can view event with the gallery picture, gallery name, partial exhibit description, and time and date of opening reception. Custom cell should be designed with the proper Auto Layout settings.  
@@ -26,4 +30,7 @@ Possible User stories:
 - [ ] User can sign in, but should be able to see the event list even without signing in.
 - [ ] The current signed in user will be persisted across restarts.
 - [ ] User can use 3D touch to see an explanation of the different elements in the tab bar.
+- [ ] User can leave reviews about an event.
+- [ ] User can chat with other users in the same location (Geo-tagging)
+
 
