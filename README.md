@@ -5,6 +5,7 @@ The App
 SFArtOpenings is an app that allows the user to find current and upcoming art openings and ongoing art exhibits in San Francisco. It allows users to get directions to events,  to chat with others at the event and to leave reviews
 
 
+## User Stories
 Required User Stories:
 - [ ] User can view a TableView of art gallery opening receptions currently happening in San Francisco from Parse reflecting Alan Bamberger’s Art Business.com “San Francisco Art Openings Calendar.”
 - [ ] In the event list, user can view event with the gallery picture, gallery name, partial exhibit description, and time and date of opening reception. Custom cell should be designed with the proper Auto Layout settings.  
@@ -16,14 +17,11 @@ Required User Stories:
 - [ ] User can view event details by tapping on a cell.
 - [ ] In the detail page, user can view event with the gallery picture, gallery name, full exhibit description, and time and date of opening reception, and a map view of the particular event. Custom cell should be designed with the proper Auto Layout settings.
 
-
-
 Potential User stories:
 - [ ] User sees a loading state while waiting for the event calendar.
 - [ ] User can pull to refresh the events list.
 - [ ] User can search for an event (by either gallery or artist name).
 - [ ] Implement map view of event results.
-
 
 Possible User stories:
 - [ ] User can see filtered data.
@@ -34,3 +32,12 @@ Possible User stories:
 - [ ] User can chat with other users in the same location (Geo-tagging)
 
 
+## Wireframes
+
+| Login  | Feed | Detail |
+| --- | --- | --- |
+| <img height="400" alt="login" src="./wireframes/login.jpg" > | <img height="400" alt="feed" src="./wireframes/feed.jpg" > | <img height="400" alt="detail" src="./wireframes/detail.jpg" > |
+
+| Map | Chat |
+| --- | --- |
+| <img height="400" alt="map" src="./wireframes/map.jpg" > | <img height="400" alt="chat" src="./wireframes/chat.jpg" > | 
