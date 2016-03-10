@@ -13,8 +13,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
+    var refreshControl = UIRefreshControl()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+        tableView.addSubview(refreshControl)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -29,20 +34,43 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
 
 
-func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 20
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
     
 }
 
-func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
-    let cell = tableView.dequeueReusableCellWithIdentifier("ReceptionCell", forIndexPath: indexPath)
-    cell.textLabel!.text = "row\(indexPath.row)"
-    print("row\(indexPath.row)")
+        let cell = tableView.dequeueReusableCellWithIdentifier("ReceptionCell", forIndexPath: indexPath)
+        cell.textLabel!.text = "row\(indexPath.row)"
+        print("row\(indexPath.row)")
     
     
-    return cell
+        return cell
 }
+    
+    func refreshControlAction(refreshControl: UIRefreshControl) {
+        let session = NSURLSession(
+            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
+            delegate:nil,
+            delegateQueue:NSOperationQueue.mainQueue()
+        )
+        let request = NSURLRequest()
+        let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
+            completionHandler: { (data, response, error) in
+                
+                // ... Use the new data to update the data source ...
+                
+                // Reload the tableView now that there is new data
+                self.tableView.reloadData()
+                print("reloading")
+                
+                // Tell the refreshControl to stop spinning
+                refreshControl.endRefreshing()
+        });
+        task.resume()
+        
+    }
 
 
     /*
