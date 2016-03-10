@@ -82,3 +82,16 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SFArtOpenings/AFNetworking.framework"
+  install_framework "Pods-SFArtOpenings/Bolts.framework"
+  install_framework "Pods-SFArtOpenings/Parse.framework"
+  install_framework "Pods-SFArtOpenings/ParseUI.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SFArtOpenings/AFNetworking.framework"
+  install_framework "Pods-SFArtOpenings/Bolts.framework"
+  install_framework "Pods-SFArtOpenings/Parse.framework"
+  install_framework "Pods-SFArtOpenings/ParseUI.framework"
+fi

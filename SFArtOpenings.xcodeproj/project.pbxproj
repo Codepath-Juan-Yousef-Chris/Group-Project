@@ -13,7 +13,7 @@
 		6AEAC5E21C800D9C0018063A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC5E01C800D9C0018063A /* Main.storyboard */; };
 		6AEAC5E41C800D9C0018063A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC5E31C800D9C0018063A /* Assets.xcassets */; };
 		6AEAC5E71C800D9C0018063A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC5E51C800D9C0018063A /* LaunchScreen.storyboard */; };
-		C62042356078B862D13879B1 /* libPods-SFArtOpenings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF867859A8274B532E2A016F /* libPods-SFArtOpenings.a */; };
+		A4B832FF75F1A2274170EB3D /* Pods_SFArtOpenings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A105503178D7C92847E1B56 /* Pods_SFArtOpenings.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		6AEAC5E61C800D9C0018063A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AEAC5E81C800D9C0018063A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93196D5F31B093C061230130 /* Pods-SFArtOpenings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFArtOpenings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFArtOpenings/Pods-SFArtOpenings.debug.xcconfig"; sourceTree = "<group>"; };
-		AF867859A8274B532E2A016F /* libPods-SFArtOpenings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SFArtOpenings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A105503178D7C92847E1B56 /* Pods_SFArtOpenings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFArtOpenings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7B8834A2FD3898C00BE35D3 /* Pods-SFArtOpenings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFArtOpenings.release.xcconfig"; path = "Pods/Target Support Files/Pods-SFArtOpenings/Pods-SFArtOpenings.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C62042356078B862D13879B1 /* libPods-SFArtOpenings.a in Frameworks */,
+				A4B832FF75F1A2274170EB3D /* Pods_SFArtOpenings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		4D1A221E455442C4594247BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AF867859A8274B532E2A016F /* libPods-SFArtOpenings.a */,
+				9A105503178D7C92847E1B56 /* Pods_SFArtOpenings.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
