@@ -33,7 +33,7 @@ Possible User stories:
 - 
 
 ## Schema
-(SFArtOpenings Flow Chart.pdf)
+(SFArtOpenings Flow Chart - New Page (1).jpeg)
 
 
 ## Wireframes
