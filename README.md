@@ -30,6 +30,10 @@ Possible User stories:
 - [ ] User can use 3D touch to see an explanation of the different elements in the tab bar.
 - [ ] User can leave reviews about an event.
 - [ ] User can chat with other users in the same location (Geo-tagging)
+- 
+
+## Schema
+(SFArtOpenings Flow Chart.pdf)
 
 
 ## Wireframes
