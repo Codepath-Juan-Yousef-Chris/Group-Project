@@ -42,7 +42,6 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCellWithIdentifier("ReceptionCell", forIndexPath: indexPath)
-        cell.textLabel!.text = "row\(indexPath.row)"
         print("row\(indexPath.row)")
     
     
