@@ -32,6 +32,10 @@ Possible User stories:
 - [ ] User can chat with other users in the same location (Geo-tagging)
 
 
+## Schema
+![schema](SFArtOpeningsSchema2.jpeg)
+
+
 ## Wireframes
 
 | Login  | Feed | Detail |
