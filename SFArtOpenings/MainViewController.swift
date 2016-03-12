@@ -72,14 +72,19 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
 
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let cell = sender as! UITableViewCell
+//        let indexPath = tableView.indexPathForCell(cell)
+
+        
+        //print("prepare for segue called")
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+   // }
+  
 
 }
