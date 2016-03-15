@@ -10,6 +10,16 @@ import UIKit
 
 class ReceptionTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var galleryImageView: UIImageView!
+    
+    @IBOutlet weak var galleryNameLabel: UILabel!
+    
+    @IBOutlet weak var galleryAddressLabel: UILabel!
+    
+    @IBOutlet weak var startTimeLabel: UILabel!
+    
+    @IBOutlet weak var myFavoritesView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -28,19 +28,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="151.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xib-LI-72x">
-                                                    <rect key="frame" x="0.0" y="-8" width="320" height="184.5"/>
-                                                    <color key="backgroundColor" red="0.75472756409999997" green="0.048121451820000001" blue="0.0087150364459999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InclineGallery" translatesAutoresizingMaskIntoConstraints="NO" id="Xib-LI-72x">
+                                                    <rect key="frame" x="0.0" y="0.5" width="320" height="151.5"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c78-rR-W8V">
+                                                    <rect key="frame" x="0.0" y="66" width="320" height="110.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-2t-kv4">
-                                                    <rect key="frame" x="8" y="17" width="304" height="37"/>
+                                                    <rect key="frame" x="8" y="66" width="304" height="22"/>
                                                     <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="21"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="685 Market St." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-kp-pad">
-                                                    <rect key="frame" x="38" y="62" width="257" height="50"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="685 Market St., San Francisco, CA 94118" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-kp-pad">
+                                                    <rect key="frame" x="8" y="89" width="302" height="26"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconmonstr-star-6-64" translatesAutoresizingMaskIntoConstraints="NO" id="J28-LB-QNX">
+                                                    <rect key="frame" x="280" y="115" width="32" height="32"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-iW-JIC">
+                                                    <rect key="frame" x="8" y="117" width="65" height="21"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -48,6 +60,13 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration" identifier="ReceptionCell"/>
+                                        <connections>
+                                            <outlet property="galleryAddressLabel" destination="n3p-kp-pad" id="pse-6T-ijh"/>
+                                            <outlet property="galleryImageView" destination="Xib-LI-72x" id="VNo-cP-ep6"/>
+                                            <outlet property="galleryNameLabel" destination="rcF-2t-kv4" id="ADa-z5-KOf"/>
+                                            <outlet property="myFavoritesView" destination="J28-LB-QNX" id="tTr-iO-YBt"/>
+                                            <outlet property="startTimeLabel" destination="wGq-iW-JIC" id="My5-AY-4D2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -61,7 +80,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="360"/>
+            <point key="canvasLocation" x="256" y="335"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="InclineGallery" width="1600" height="1081"/>
+        <image name="iconmonstr-star-6-64" width="64" height="64"/>
+    </resources>
 </document>
