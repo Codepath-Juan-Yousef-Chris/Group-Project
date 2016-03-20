@@ -36,7 +36,6 @@ Possible User stories:
 ## Schema
 ![schema](SFArtOpeningsSchema2.jpeg)
 
-
 ## Wireframes
 
 | Login  | Feed | Detail |
@@ -46,3 +45,6 @@ Possible User stories:
 | Map | Chat |
 | --- | --- |
 | <img height="400" alt="map" src="./wireframes/map.jpg" > | <img height="400" alt="chat" src="./wireframes/chat.jpg" > | 
+
+## Walkthrough
+![Walkthrough](groupgif.gif)
