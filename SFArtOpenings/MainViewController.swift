@@ -14,6 +14,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var usernameBarButton: UIButton!
+    
     var refreshControl = UIRefreshControl()
     
     var today: [PFObject]?
@@ -26,6 +28,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.dataSource = self
         tableView.delegate = self
+        
 
         // Do any additional setup after loading the view.
     }
@@ -60,8 +63,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let galleryName = reception["galleryName"] as! String
         let galleryAddress = reception["galleryAddress"] as! String
+        let receptionTime = reception["receptionTime"] as! String
+        let receptionDate = reception["receptionDate"] as! String
         cell.galleryNameLabel.text = galleryName
         cell.galleryAddressLabel.text = galleryAddress
+        cell.startTimeLabel.text = receptionTime
+        cell.startDateLabel.text = receptionDate
+        
         
         print("getting gallery name")
     

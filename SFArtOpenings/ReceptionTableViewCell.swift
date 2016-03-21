@@ -20,6 +20,9 @@ class ReceptionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var myFavoritesView: UIImageView!
     
+    @IBOutlet weak var startDateLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
