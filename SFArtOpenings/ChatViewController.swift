@@ -13,7 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
 
     @IBOutlet weak var messageField: UITextField!
     @IBOutlet weak var chatTableView: UITableView!
-    
+    var messages: [PFObject]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,9 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         // Do any additional setup after loading the view.
         chatTableView.dataSource = self
         chatTableView.delegate = self
+        
+        //DON'T FORGET TO CALL YOUR FUNCTIONS
+        retrievingMessages()
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +62,27 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         
         cell.messageLabel.text = "\(indexPath.row)"
         return cell
+    }
+    
+    //pulling messages from Parse
+    func retrievingMessages() {
+        let query = PFQuery (className: "Message")
+        query.orderByAscending("createdAt")
+        query.limit = 20
+        
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if let objects = objects  {
+                // do something with the data fetched
+                self.messages = objects
+                print(self.messages)
+                //self.tableView.reloadData()
+            } else {
+                //                // handle error
+                print ("Error")
+                
+            }
+            
+        }
     }
     
 
