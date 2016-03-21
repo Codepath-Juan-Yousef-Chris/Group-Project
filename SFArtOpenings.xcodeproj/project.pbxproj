@@ -11,6 +11,7 @@
 		542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542504031C9156170092AE3B /* ReceptionTableViewCell.swift */; };
 		546168731C9E1EB100DC6D0D /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546168721C9E1EB100DC6D0D /* Today.swift */; };
 		546168751C9E1EBD00DC6D0D /* Upcoming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546168741C9E1EBD00DC6D0D /* Upcoming.swift */; };
+		546168771C9F7C9A00DC6D0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546168761C9F7C9A00DC6D0D /* LoginViewController.swift */; };
 		6AEAC5DD1C800D9C0018063A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC5DC1C800D9C0018063A /* AppDelegate.swift */; };
 		6AEAC5E21C800D9C0018063A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC5E01C800D9C0018063A /* Main.storyboard */; };
 		6AEAC5E41C800D9C0018063A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC5E31C800D9C0018063A /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		542504031C9156170092AE3B /* ReceptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewCell.swift; sourceTree = "<group>"; };
 		546168721C9E1EB100DC6D0D /* Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		546168741C9E1EBD00DC6D0D /* Upcoming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Upcoming.swift; sourceTree = "<group>"; };
+		546168761C9F7C9A00DC6D0D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6AEAC5D91C800D9C0018063A /* SFArtOpenings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFArtOpenings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEAC5DC1C800D9C0018063A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AEAC5E11C800D9C0018063A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				542503FF1C9154EA0092AE3B /* MainViewController.swift */,
+				546168761C9F7C9A00DC6D0D /* LoginViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546168771C9F7C9A00DC6D0D /* LoginViewController.swift in Sources */,
 				542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */,
 				546168751C9E1EBD00DC6D0D /* Upcoming.swift in Sources */,
 				542504001C9154EA0092AE3B /* MainViewController.swift in Sources */,
