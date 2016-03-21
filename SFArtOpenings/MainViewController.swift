@@ -20,6 +20,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var today: [PFObject]?
     
+    var parseClass: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,7 +104,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func parseAPICall() {
         // construct PFQuery
-        let query = PFQuery(className: "Today")
+        let query = PFQuery(className: parseClass)
         query.orderByAscending("_id")
         query.limit = 20
         // fetch data asynchronously
