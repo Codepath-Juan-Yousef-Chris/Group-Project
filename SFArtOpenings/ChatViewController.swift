@@ -25,10 +25,13 @@ class ChatViewController: UIViewController {
     }
     
    
-    
+    //the send button
     @IBAction func onSend(sender: AnyObject) {
+        //Creating an instance of message as a PFObject.
         var message = PFObject (className: "Message")
         message["text"] = messageField.text
+        
+        //Storing message on Parse
         message.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             if (success){
                 print("successfully saved")
