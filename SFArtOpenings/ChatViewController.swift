@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Parse
 
 class ChatViewController: UIViewController {
 
+    @IBOutlet weak var messageField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,6 +22,21 @@ class ChatViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+   
+    
+    @IBAction func onSend(sender: AnyObject) {
+        var message = PFObject (className: "Message")
+        message["text"] = messageField.text
+        message.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            if (success){
+                print("successfully saved")
+                
+            } else {
+                print("saving failed")
+            }
+        }
     }
     
 
