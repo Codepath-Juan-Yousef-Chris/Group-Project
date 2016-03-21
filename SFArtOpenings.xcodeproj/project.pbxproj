@@ -65,13 +65,13 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
-		542504021C91550B0092AE3B /* Other swift files */ = {
+		542504021C91550B0092AE3B /* models */ = {
 			isa = PBXGroup;
 			children = (
 				546168721C9E1EB100DC6D0D /* Today.swift */,
 				546168741C9E1EBD00DC6D0D /* Upcoming.swift */,
 			);
-			name = "Other swift files";
+			name = models;
 			sourceTree = "<group>";
 		};
 		6AEAC5D01C800D9C0018063A = {
@@ -95,7 +95,7 @@
 		6AEAC5DB1C800D9C0018063A /* SFArtOpenings */ = {
 			isa = PBXGroup;
 			children = (
-				542504021C91550B0092AE3B /* Other swift files */,
+				542504021C91550B0092AE3B /* models */,
 				542504011C9154FB0092AE3B /* View Controllers */,
 				6AEAC5DC1C800D9C0018063A /* AppDelegate.swift */,
 				6AEAC5E01C800D9C0018063A /* Main.storyboard */,

@@ -56,6 +56,12 @@ class LoginViewController: UIViewController {
         }
     }
     
+    @IBAction func onCancel(sender: AnyObject) {
+        
+        self.dismissViewControllerAnimated(false, completion: nil)
+        print("canceled")
+        
+    }
 
     /*
     // MARK: - Navigation
