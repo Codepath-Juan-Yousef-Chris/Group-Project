@@ -31,25 +31,31 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-2t-kv4">
                                                     <rect key="frame" x="6" y="0.0" width="304" height="22"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="685 Market St., San Francisco, CA 94118" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-kp-pad">
-                                                    <rect key="frame" x="8" y="28.5" width="302" height="26"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="15"/>
+                                                    <rect key="frame" x="8" y="22" width="284" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-iW-JIC">
-                                                    <rect key="frame" x="8" y="56.5" width="65" height="21"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
+                                                    <rect key="frame" x="8" y="66" width="95" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconmonstr-star-6-64" translatesAutoresizingMaskIntoConstraints="NO" id="J28-LB-QNX">
                                                     <rect key="frame" x="273" y="62" width="19" height="20.5"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 28th 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrB-7s-TXn">
+                                                    <rect key="frame" x="111" y="66" width="118" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,6 +64,7 @@
                                             <outlet property="galleryAddressLabel" destination="n3p-kp-pad" id="pse-6T-ijh"/>
                                             <outlet property="galleryNameLabel" destination="rcF-2t-kv4" id="ADa-z5-KOf"/>
                                             <outlet property="myFavoritesView" destination="J28-LB-QNX" id="tTr-iO-YBt"/>
+                                            <outlet property="startDateLabel" destination="hrB-7s-TXn" id="W56-ju-0Fu"/>
                                             <outlet property="startTimeLabel" destination="wGq-iW-JIC" id="My5-AY-4D2"/>
                                             <segue destination="NPj-Uz-BiP" kind="show" id="CG1-qu-l9Y"/>
                                         </connections>
@@ -68,11 +75,22 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="gfn-U1-7Wy">
+                        <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="settingssmall" id="92q-UD-Jfu"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="794-Aa-bKu">
+                            <rect key="frame" x="69" y="7" width="128" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="username"/>
+                            <connections>
+                                <segue destination="6nb-Gz-R1w" kind="presentation" identifier="mainLoginSegue" id="yTN-DY-EzL"/>
+                            </connections>
+                        </button>
                         <rightBarButtonItems>
                             <barButtonItem image="chatsmall" id="AD0-ux-0hg">
                                 <connections>
-                                    <segue destination="6nb-Gz-R1w" kind="modal" id="xHA-4d-EvL"/>
+                                    <segue destination="jUp-10-iO4" kind="popoverPresentation" popoverAnchorBarButtonItem="AD0-ux-0hg" id="cYx-8c-n0A">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="gpssmall" id="klm-vp-E0J"/>
@@ -81,6 +99,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="tableView" destination="zPJ-fN-PQW" id="t0J-Lt-oxS"/>
+                        <outlet property="usernameBarButton" destination="794-Aa-bKu" id="xFR-Vk-yoT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -245,17 +264,17 @@
                     <connections>
                         <outlet property="passwordField" destination="40P-4h-4wA" id="5rs-2L-1F6"/>
                         <outlet property="userNameField" destination="rX3-ql-6f7" id="XY3-GW-2GZ"/>
-                        <segue destination="nhV-7i-rP3" kind="presentation" identifier="loginSegue" id="zFB-78-ihe"/>
+                        <segue destination="0oe-fs-0x6" kind="presentation" identifier="loginSegue" id="DHW-T8-1CS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2Z-b9-zTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1243" y="-341"/>
+            <point key="canvasLocation" x="1068" y="-525"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="l9r-2e-RhC">
             <objects>
-                <viewController id="nhV-7i-rP3" sceneMemberID="viewController">
+                <viewController id="nhV-7i-rP3" customClass="ChatViewController" customModule="SFArtOpenings" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fN1-fX-V3i"/>
                         <viewControllerLayoutGuide type="bottom" id="ecL-Q1-60x"/>
@@ -263,13 +282,40 @@
                     <view key="view" contentMode="scaleToFill" id="yE3-I1-feI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CHAT!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5V-8q-sRb">
+                                <rect key="frame" x="136" y="171" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6iD-FA-6Ni"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTG-Ql-vDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="-341"/>
+            <point key="canvasLocation" x="2019" y="-525"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="REF-N8-Lrw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jUp-10-iO4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hwn-X7-vkD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nhV-7i-rP3" kind="relationship" relationship="rootViewController" id="TdR-eu-zBR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rlu-1F-qkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="-525"/>
         </scene>
     </scenes>
     <resources>
