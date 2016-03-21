@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 configuration.server = "https://sf-art.herokuapp.com/parse"
             })
         )
+        
         return true
     }
 
