@@ -9,14 +9,18 @@
 import UIKit
 import Parse
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var messageField: UITextField!
+    @IBOutlet weak var chatTableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        chatTableView.dataSource = self
+        chatTableView.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +44,20 @@ class ChatViewController: UIViewController {
                 print("saving failed")
             }
         }
+    }
+    
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 5
+    }
+    
+    
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell =
+        
+        return cell
     }
     
 
