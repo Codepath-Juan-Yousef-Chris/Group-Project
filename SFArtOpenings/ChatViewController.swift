@@ -55,8 +55,9 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell =
+        let cell = chatTableView.dequeueReusableCellWithIdentifier( "ChatTableViewCell", forIndexPath: indexPath) as! ChatTableViewCell
         
+        cell.messageLabel.text = "\(indexPath.row)"
         return cell
     }
     
