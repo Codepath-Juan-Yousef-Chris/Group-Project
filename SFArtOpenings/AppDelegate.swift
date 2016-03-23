@@ -27,11 +27,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let todayViewController = todayNavigationController.topViewController as! MainViewController
         todayViewController.parseClass = "Today"
         todayNavigationController.tabBarItem.title = "Today"
+        todayNavigationController.tabBarItem.image = UIImage(named: "temp1")
+        //todayNavigationController.tabBarItem.selectedImage = UIImage(named: "temp1")
+        
         
         let upcomingNavigationController = storyboard.instantiateViewControllerWithIdentifier("receptionsNavigationController") as! UINavigationController
         let upcomingViewController = upcomingNavigationController.topViewController as! MainViewController
         upcomingViewController.parseClass = "Upcoming"
         upcomingNavigationController.tabBarItem.title = "Upcoming"
+        upcomingNavigationController.tabBarItem.image = UIImage(named: "temp2")
+        //upcomingNavigationController.tabBarItem.selectedImage = UIImage(named: "temp1")
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [todayNavigationController, upcomingNavigationController]
