@@ -13,6 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
 
     @IBOutlet weak var messageField: UITextField!
     @IBOutlet weak var chatTableView: UITableView!
+    
     var messages: [PFObject]?
     
     override func viewDidLoad() {
@@ -51,6 +52,10 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         
         //Displaying the message that has been save to Parse
         retrievingMessages()
+        
+        //Deleting what was typed after hitting send
+        messageField.text = ""
+        
     }
     
     
