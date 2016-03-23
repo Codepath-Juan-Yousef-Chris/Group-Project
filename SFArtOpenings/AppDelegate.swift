@@ -26,10 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let todayNavigationController = storyboard.instantiateViewControllerWithIdentifier("receptionsNavigationController") as! UINavigationController
         let todayViewController = todayNavigationController.topViewController as! MainViewController
         todayViewController.parseClass = "Today"
+        todayNavigationController.tabBarItem.title = "Today"
         
         let upcomingNavigationController = storyboard.instantiateViewControllerWithIdentifier("receptionsNavigationController") as! UINavigationController
         let upcomingViewController = upcomingNavigationController.topViewController as! MainViewController
         upcomingViewController.parseClass = "Upcoming"
+        upcomingNavigationController.tabBarItem.title = "Upcoming"
         
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [todayNavigationController, upcomingNavigationController]

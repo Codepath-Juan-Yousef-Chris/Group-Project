@@ -109,7 +109,7 @@
         <!--View Controller-->
         <scene sceneID="Wfa-yc-rkv">
             <objects>
-                <viewController id="NPj-Uz-BiP" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="NPj-Uz-BiP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ojg-dk-GLJ"/>
                         <viewControllerLayoutGuide type="bottom" id="RlZ-fa-5EY"/>
