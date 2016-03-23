@@ -37,6 +37,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         //Creating an instance of message as a PFObject.
         let message = PFObject (className: "Message")
         message["text"] = messageField.text
+        message["user"] = PFUser.currentUser()
         
         //Storing message on Parse
         message.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
@@ -53,6 +54,9 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     }
     
     
+    
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return messages?.count ?? 0
@@ -64,13 +68,25 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         let cell = chatTableView.dequeueReusableCellWithIdentifier( "ChatTableViewCell", forIndexPath: indexPath) as! ChatTableViewCell
         let message = messages![indexPath.row]
         
+        
         cell.messageLabel.text = message["text"] as! String
+        
+        //showing the user for each message
+        let user = message["user"] as? PFUser
+        cell.userNameLabel.text = user?.username
+        
         return cell
     }
+    
+    
+    
+    
+    
     
     //pulling messages from Parse
     func retrievingMessages() {
         let query = PFQuery (className: "Message")
+        query.includeKey("user")
         query.orderByDescending("createdAt")
         query.limit = 20
         
