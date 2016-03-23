@@ -35,7 +35,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     //the send button
     @IBAction func onSend(sender: AnyObject) {
         //Creating an instance of message as a PFObject.
-        var message = PFObject (className: "Message")
+        let message = PFObject (className: "Message")
         message["text"] = messageField.text
         
         //Storing message on Parse
@@ -85,6 +85,11 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         }
     }
     
+    
+    @IBAction func onCancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+        print("canceled")
+    }
 
     /*
     // MARK: - Navigation
