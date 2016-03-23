@@ -20,6 +20,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var today: [PFObject]?
     
+    var parseClass: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -102,7 +104,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     func parseAPICall() {
         // construct PFQuery
-        let query = PFQuery(className: "Today")
+        let query = PFQuery(className: parseClass)
         query.orderByAscending("_id")
         query.limit = 20
         // fetch data asynchronously
@@ -125,14 +127,20 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        
 //        let cell = sender as! UITableViewCell
 //        let indexPath = tableView.indexPathForCell(cell)
-
-        
-        //print("prepare for segue called")
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-   // }
+//        let thing = today![indexPath!.row]
+//        
+//        let detailViewController = segue.destinationViewController as! DetailViewController
+//        
+//        
+//
+//        
+//        print("prepare for segue called")
+//         //Get the new view controller using segue.destinationViewController.
+//         //Pass the selected object to the new view controller.
+//    }
   
 
 }
