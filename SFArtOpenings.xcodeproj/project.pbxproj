@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54046E801CA2A017002AF7DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54046E7F1CA2A017002AF7DE /* DetailViewController.swift */; };
 		542504001C9154EA0092AE3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542503FF1C9154EA0092AE3B /* MainViewController.swift */; };
 		542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542504031C9156170092AE3B /* ReceptionTableViewCell.swift */; };
 		546168731C9E1EB100DC6D0D /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546168721C9E1EB100DC6D0D /* Today.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54046E7F1CA2A017002AF7DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		542503FF1C9154EA0092AE3B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		542504031C9156170092AE3B /* ReceptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewCell.swift; sourceTree = "<group>"; };
 		546168721C9E1EB100DC6D0D /* Today.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				542503FF1C9154EA0092AE3B /* MainViewController.swift */,
+				54046E7F1CA2A017002AF7DE /* DetailViewController.swift */,
 				546168761C9F7C9A00DC6D0D /* LoginViewController.swift */,
 				5461687A1C9F969300DC6D0D /* ChatViewController.swift */,
 			);
@@ -255,6 +258,7 @@
 				546168751C9E1EBD00DC6D0D /* Upcoming.swift in Sources */,
 				542504001C9154EA0092AE3B /* MainViewController.swift in Sources */,
 				6AEAC5DD1C800D9C0018063A /* AppDelegate.swift in Sources */,
+				54046E801CA2A017002AF7DE /* DetailViewController.swift in Sources */,
 				546168731C9E1EB100DC6D0D /* Today.swift in Sources */,
 				546168791C9F867E00DC6D0D /* User.swift in Sources */,
 			);

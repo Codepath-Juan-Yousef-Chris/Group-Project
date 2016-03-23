@@ -18,6 +18,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let todayNavigationController = storyboard.instantiateViewControllerWithIdentifier("receptionsNavigationController") as! UINavigationController
+        let todayViewController = todayNavigationController.topViewController as! MainViewController
+        todayViewController.parseClass = "Today"
+        todayNavigationController.tabBarItem.title = "Today"
+        todayNavigationController.tabBarItem.image = UIImage(named: "temp1")
+        //todayNavigationController.tabBarItem.selectedImage = UIImage(named: "temp1")
+        
+        
+        let upcomingNavigationController = storyboard.instantiateViewControllerWithIdentifier("receptionsNavigationController") as! UINavigationController
+        let upcomingViewController = upcomingNavigationController.topViewController as! MainViewController
+        upcomingViewController.parseClass = "Upcoming"
+        upcomingNavigationController.tabBarItem.title = "Upcoming"
+        upcomingNavigationController.tabBarItem.image = UIImage(named: "temp2")
+        //upcomingNavigationController.tabBarItem.selectedImage = UIImage(named: "temp1")
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [todayNavigationController, upcomingNavigationController]
+        
+        window?.rootViewController = tabBarController
+        window?.makeKeyAndVisible()
+        
+        
         Parse.initializeWithConfiguration(
             ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "groupcpu"
