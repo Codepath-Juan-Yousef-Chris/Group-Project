@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="335"/>
+            <point key="canvasLocation" x="1076" y="335"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Wfa-yc-rkv">
@@ -174,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlK-Yh-TTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="335"/>
+            <point key="canvasLocation" x="1759" y="335"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Svn-dk-xFY">
@@ -273,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P2Z-b9-zTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1068" y="-525"/>
+            <point key="canvasLocation" x="1524" y="-553"/>
         </scene>
         <!--Chat-->
         <scene sceneID="l9r-2e-RhC">
@@ -318,7 +318,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgV-SZ-Xpb">
-                                                    <rect key="frame" x="18" y="22" width="81" height="21"/>
+                                                    <rect key="frame" x="18" y="22" width="227" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -349,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hTG-Ql-vDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2019" y="-525"/>
+            <point key="canvasLocation" x="2579" y="-441"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="REF-N8-Lrw">
@@ -367,7 +367,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlu-1F-qkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="-525"/>
+            <point key="canvasLocation" x="2111" y="-441"/>
         </scene>
     </scenes>
     <resources>

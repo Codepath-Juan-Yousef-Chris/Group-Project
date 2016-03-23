@@ -47,27 +47,31 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
                 print("saving failed")
             }
         }
+        
+        //Displaying the message that has been save to Parse
+        retrievingMessages()
     }
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return messages?.count ?? 0
     }
     
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = chatTableView.dequeueReusableCellWithIdentifier( "ChatTableViewCell", forIndexPath: indexPath) as! ChatTableViewCell
+        let message = messages![indexPath.row]
         
-        cell.messageLabel.text = "\(indexPath.row)"
+        cell.messageLabel.text = message["text"] as! String
         return cell
     }
     
     //pulling messages from Parse
     func retrievingMessages() {
         let query = PFQuery (className: "Message")
-        query.orderByAscending("createdAt")
+        query.orderByDescending("createdAt")
         query.limit = 20
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
@@ -75,7 +79,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
                 // do something with the data fetched
                 self.messages = objects
                 print(self.messages)
-                //self.tableView.reloadData()
+                self.chatTableView.reloadData()
             } else {
                 //                // handle error
                 print ("Error")

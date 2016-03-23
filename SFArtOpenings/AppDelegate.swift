@@ -53,6 +53,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
+        
+        
+//       //User Persistence
+//        if PFUser.currentUser() != nil {
+//                     
+//        }
+        
         return true
     }
 
