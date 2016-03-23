@@ -101,10 +101,12 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if let objects = objects  {
+                
                 // do something with the data fetched
                 self.messages = objects
-                print(self.messages)
+                //print(self.messages)
                 self.chatTableView.reloadData()
+                
             } else {
                 //                // handle error
                 print ("Error")
@@ -119,7 +121,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     //refreshes the table using NStimer, set in the viewDidLoad
     func onTimer() {
         retrievingMessages()
-        print("hello")
+        //print("hello")
     }
     
     
@@ -128,6 +130,8 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         self.dismissViewControllerAnimated(false, completion: nil)
         print("canceled")
     }
+    
+ 
 
     /*
     // MARK: - Navigation
