@@ -8,10 +8,11 @@ SFArtOpenings is an app that allows the user to find current and upcoming art op
 ## User Stories
 Required User Stories:
 - [ ] User can view a TableView of art gallery opening receptions currently happening in San Francisco from Parse reflecting Alan Bamberger’s Art Business.com “San Francisco Art Openings Calendar.”
-- [ ] In the event list, user can view event with the gallery picture, gallery name, partial exhibit description, and time and date of opening reception. Custom cell should be designed with the proper Auto Layout settings.  
+- [ ] In the event list, user can view event with the gallery picture, gallery name, partial exhibit description, and time and date of opening reception. 
+- [ ] Custom cell should be designed with the proper Auto Layout settings.  
 - [ ] User can search and Search bar should be in the navigation bar.
 - [ ] User can select from a tab bar for either “(Reception) Today,” “Upcoming,” or “Ongoing” art exhibits
-- [ ] Table rows should have dynamic height? (although content needs to get cut off because it’s usually large).
+- [ ] Table rows should have dynamic height (although content needs to get cut off because it’s usually large).
 
 
 - [ ] User can view event details by tapping on a cell.
@@ -35,7 +36,6 @@ Possible User stories:
 ## Schema
 ![schema](SFArtOpeningsSchema2.jpeg)
 
-
 ## Wireframes
 
 | Login  | Feed | Detail |
@@ -45,3 +45,6 @@ Possible User stories:
 | Map | Chat |
 | --- | --- |
 | <img height="400" alt="map" src="./wireframes/map.jpg" > | <img height="400" alt="chat" src="./wireframes/chat.jpg" > | 
+
+## Walkthrough
+![Walkthrough](groupgif.gif)
