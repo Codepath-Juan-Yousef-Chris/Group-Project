@@ -25,6 +25,10 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         
         //DON'T FORGET TO CALL YOUR FUNCTIONS
         retrievingMessages()
+        
+        
+        //Sets a timer to repeat whatever instruction is inside the onTimer fucntion
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "onTimer", userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,7 +93,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     
     
     //pulling messages from Parse
-    func retrievingMessages() {
+    func retrievingMessages( ) {
         let query = PFQuery (className: "Message")
         query.includeKey("user")
         query.orderByDescending("createdAt")
@@ -109,6 +113,15 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
             
         }
     }
+    
+    
+    
+    //refreshes the table using NStimer, set in the viewDidLoad
+    func onTimer() {
+        retrievingMessages()
+        print("hello")
+    }
+    
     
     
     @IBAction func onCancel(sender: AnyObject) {
