@@ -13,6 +13,7 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
 
     @IBOutlet weak var messageField: UITextField!
     @IBOutlet weak var chatTableView: UITableView!
+    
     var messages: [PFObject]?
     
     override func viewDidLoad() {
@@ -24,6 +25,10 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         
         //DON'T FORGET TO CALL YOUR FUNCTIONS
         retrievingMessages()
+        
+        
+        //Sets a timer to repeat whatever instruction is inside the onTimer fucntion
+        NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "onTimer", userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,8 +40,9 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     //the send button
     @IBAction func onSend(sender: AnyObject) {
         //Creating an instance of message as a PFObject.
-        var message = PFObject (className: "Message")
+        let message = PFObject (className: "Message")
         message["text"] = messageField.text
+        message["user"] = PFUser.currentUser()
         
         //Storing message on Parse
         message.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
@@ -47,35 +53,60 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
                 print("saving failed")
             }
         }
+        
+        //Displaying the message that has been save to Parse
+        retrievingMessages()
+        
+        //Deleting what was typed after hitting send
+        messageField.text = ""
+        
     }
+    
+    
+    
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 5
+        return messages?.count ?? 0
     }
     
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = chatTableView.dequeueReusableCellWithIdentifier( "ChatTableViewCell", forIndexPath: indexPath) as! ChatTableViewCell
+        let message = messages![indexPath.row]
         
-        cell.messageLabel.text = "\(indexPath.row)"
+        
+        cell.messageLabel.text = message["text"] as! String
+        
+        //showing the user for each message
+        let user = message["user"] as? PFUser
+        cell.userNameLabel.text = user?.username
+        
         return cell
     }
     
+    
+    
+    
+    
+    
     //pulling messages from Parse
-    func retrievingMessages() {
+    func retrievingMessages( ) {
         let query = PFQuery (className: "Message")
-        query.orderByAscending("createdAt")
+        query.includeKey("user")
+        query.orderByDescending("createdAt")
         query.limit = 20
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if let objects = objects  {
+                
                 // do something with the data fetched
                 self.messages = objects
-                print(self.messages)
-                //self.tableView.reloadData()
+                //print(self.messages)
+                self.chatTableView.reloadData()
+                
             } else {
                 //                // handle error
                 print ("Error")
@@ -85,6 +116,22 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         }
     }
     
+    
+    
+    //refreshes the table using NStimer, set in the viewDidLoad
+    func onTimer() {
+        retrievingMessages()
+        //print("hello")
+    }
+    
+    
+    
+    @IBAction func onCancel(sender: AnyObject) {
+        self.dismissViewControllerAnimated(false, completion: nil)
+        print("canceled")
+    }
+    
+ 
 
     /*
     // MARK: - Navigation
