@@ -47,4 +47,7 @@ Possible User stories:
 | <img height="400" alt="map" src="./wireframes/map.jpg" > | <img height="400" alt="chat" src="./wireframes/chat.jpg" > | 
 
 ## Walkthrough
+33 percent
 ![Walkthrough](groupgif.gif)
+66 percent
+![Walkthrough](groupgif2.gif)
