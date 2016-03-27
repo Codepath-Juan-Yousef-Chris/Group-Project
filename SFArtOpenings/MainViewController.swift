@@ -18,14 +18,39 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var refreshControl = UIRefreshControl()
     
+    @IBOutlet weak var todaySideImageView: UIImageView!
+    
+    @IBOutlet weak var upcomingSideImageView: UIImageView!
+    
     var today: [PFObject]?
     
-    //var obj: PFObject?
+    //var myView: MainViewController
     
     var parseClass: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+//        if parseClass == "Today" {
+//            UIView.animateWithDuration(1, animations: {
+//                
+//                self.todaySideImageView.alpha = 1
+//                print("Color CHANGEDDDDDDDDDD Today")
+//                
+//            })
+//            
+//        } else if parseClass == "Upcoming"{
+//            
+//            UIView.animateWithDuration(
+//                1, animations: {
+//                    self.upcomingSideImageView.alpha = 1
+//                    print ("color CHANGEDDDDDDD upcoming")
+//                    
+//            })
+//        
+//        }
         
         //User Persistence)"
         let user = PFUser.currentUser()
@@ -51,6 +76,18 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewWillAppear(animated: Bool) {
         parseAPICall()
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        tabColor0()
+        tabColor1()
+        
+    }
+    
+    override func viewDidDisappear(animated: Bool) {
+        
+        
     }
     
 
@@ -122,6 +159,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 // do something with the data fetched
                 self.today = objects
                 print(self.parseClass)
+                
                 self.tableView.reloadData()
             } else {
                 //                // handle error
@@ -131,24 +169,83 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         }
     }
+    
+    func tabColor0 () {
+        if parseClass == "Today" {
+            UIView.animateWithDuration(1, animations: {
+                
+                self.todaySideImageView.alpha = 1
+//                UIView.animateWithDuration(1, animations: {
+//                    self.upcomingSideImageView.alpha = 0
+//                    print("CHANGEDDDDDDDDDD Upcoming back to 0000000000")
+//                })
+                
+                
+                
+            })
+            
+        } else if parseClass == "Upcoming"{
+            
+            UIView.animateWithDuration(
+                1, animations: {
+                    self.upcomingSideImageView.alpha = 1
+//                UIView.animateWithDuration(1, animations: {
+//                    self.todaySideImageView.alpha = 0
+//                    print("CHANGEDDDDDDDDDD today back to 0000000000")
+//                })
+    
+                    
+            })
+            
+        }
+    }
+    
+    func tabColor1 () {
+            
+            if parseClass == "Today" {
+                
+                                                    UIView.animateWithDuration(1, animations: {
+                                        self.upcomingSideImageView.alpha = 0
+                                        print("CHANGEDDDDDDDDDD Upcoming back to 0000000000")
+                                    })
+                
+                    
+                    
+
+                
+            } else if parseClass == "Upcoming"{
+                
+                                        UIView.animateWithDuration(1, animations: {
+                                            self.todaySideImageView.alpha = 0
+                                            print("CHANGEDDDDDDDDDD today back to 0000000000")
+                                        })
+                
+                
+            
+        }
+    }
+    
    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//
-//        let cell = sender as! UITableViewCell
-//        let indexPath = tableView.indexPathForCell(cell)
-//        let event = today![indexPath!.row]
-//        
-//        let detailViewController = segue.destinationViewController as! DetailViewController
-//        detailViewController.event = event
-//    
-//    
-//        //print(event)
-//         //Get the new view controller using segue.destinationViewController.
-//         //Pass the selected object to the new view controller.
-//    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+        if (segue.identifier == "detailsSegue") {
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let event = today![indexPath!.row]
+        
+        let detailViewController = segue.destinationViewController as! DetailViewController
+        detailViewController.event = event
+        }
+        
+        
+    
+        //print(event)
+         //Get the new view controller using segue.destinationViewController.
+         //Pass the selected object to the new view controller.
+    }
 
 
 }
