@@ -20,10 +20,18 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var today: [PFObject]?
     
+    //var obj: PFObject?
+    
     var parseClass: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //User Persistence)"
+        let user = PFUser.currentUser()
+        //print ("current user here it is: \(user?.username)")
+        usernameBarButton.setTitle(user?.username, forState: UIControlState.Normal)
+        
         
         refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
@@ -113,7 +121,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             if let objects = objects  {
                 // do something with the data fetched
                 self.today = objects
-                print(self.today)
+                print(self.parseClass)
                 self.tableView.reloadData()
             } else {
                 //                // handle error
@@ -128,20 +136,19 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        
+//
 //        let cell = sender as! UITableViewCell
 //        let indexPath = tableView.indexPathForCell(cell)
-//        let thing = today![indexPath!.row]
+//        let event = today![indexPath!.row]
 //        
 //        let detailViewController = segue.destinationViewController as! DetailViewController
-//        
-//        
-//
-//        
-//        print("prepare for segue called")
+//        detailViewController.event = event
+//    
+//    
+//        //print(event)
 //         //Get the new view controller using segue.destinationViewController.
 //         //Pass the selected object to the new view controller.
 //    }
-  
+
 
 }
