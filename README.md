@@ -48,6 +48,6 @@ Possible User stories:
 
 ## Walkthrough
 33 percent
-![Walkthrough](groupgif.gif)
+<center>![Walkthrough](groupgif.gif)</center>
 66 percent
-![Walkthrough](groupgif2.gif)
+<center>![Walkthrough](groupgif2.gif)</center>
