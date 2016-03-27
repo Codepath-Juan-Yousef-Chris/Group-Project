@@ -13,9 +13,16 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var userView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let user = PFUser.currentUser()
+        
+        if user != nil{
+            userView.hidden = true
+        }
         
 
         // Do any additional setup after loading the view.
