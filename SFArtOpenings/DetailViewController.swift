@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import Parse
 
 class DetailViewController: UIViewController {
+    
+    var event: PFObject?
 
+    @IBOutlet weak var galleryLabelText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let galleryName = event!["galleryName"] as? String
+        galleryLabelText.text = galleryName
+//
+//        //print(event)
 
         // Do any additional setup after loading the view.
     }

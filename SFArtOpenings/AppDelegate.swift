@@ -57,7 +57,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
 //       //User Persistence
 //        if PFUser.currentUser() != nil {
-//                     
+//              let user = PFUser.currentUser
+//              print(user)
 //        }
         
         return true
