@@ -14,12 +14,19 @@ class DetailViewController: UIViewController {
     var event: PFObject?
 
     @IBOutlet weak var galleryLabelText: UILabel!
+    @IBOutlet weak var exhibtionDescriptionLabel: UILabel!
+    @IBOutlet weak var receptionTimeLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let galleryName = event!["galleryName"] as? String
+        let receptionTime = event!["receptionTime"] as? String
+        let exhibitionDescription = event!["description"] as? String
         galleryLabelText.text = galleryName
+        receptionTimeLabel.text = receptionTime
+        exhibtionDescriptionLabel.text = exhibitionDescription
 //
 //        //print(event)
 

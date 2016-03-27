@@ -18,11 +18,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let user = PFUser.currentUser()
-        
-        if user != nil{
-            userView.hidden = true
-        }
         
 
         // Do any additional setup after loading the view.
@@ -41,7 +36,12 @@ class LoginViewController: UIViewController {
             if user != nil {
                 print("signed in")
                 
-                self.performSegueWithIdentifier("loginSegue", sender: nil)
+                
+
+                self.dismissViewControllerAnimated(false, completion: nil)
+                
+                
+                //self.performSegueWithIdentifier("loginSegue", sender: nil)
             }
         }
     }
@@ -55,7 +55,10 @@ class LoginViewController: UIViewController {
         newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
             if success {
                 print("Thanks for signing up!")
-                self.performSegueWithIdentifier("loginSegue", sender: nil)
+                
+                self.dismissViewControllerAnimated(false, completion: nil)
+                
+                //self.performSegueWithIdentifier("loginSegue", sender: nil)
             } else {
                 print(error?.localizedDescription)
                 if error?.code == 202 {
@@ -73,17 +76,24 @@ class LoginViewController: UIViewController {
         
     }
 
+    @IBAction func onLogout(sender: AnyObject) {
+        PFUser.logOut()
+        
+        self.dismissViewControllerAnimated(false, completion: nil)
+        
+        print("bye!")
+    }
 
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         
         
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
+//    }
 
 
 }
