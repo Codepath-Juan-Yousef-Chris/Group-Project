@@ -30,6 +30,18 @@ class ChatViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         //Sets a timer to repeat whatever instruction is inside the onTimer fucntion
         NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: "onTimer", userInfo: nil, repeats: true)
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        let user = PFUser.currentUser()
+        if user == nil {
+            
+            performSegueWithIdentifier("loginChatSegue", sender: nil)
+            print("signed in")
+            
+        }
+        
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
