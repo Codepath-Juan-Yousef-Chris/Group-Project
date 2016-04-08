@@ -24,33 +24,11 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var today: [PFObject]?
     
-    //var myView: MainViewController
-    
     var parseClass: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-//        if parseClass == "Today" {
-//            UIView.animateWithDuration(1, animations: {
-//                
-//                self.todaySideImageView.alpha = 1
-//                print("Color CHANGEDDDDDDDDDD Today")
-//                
-//            })
-//            
-//        } else if parseClass == "Upcoming"{
-//            
-//            UIView.animateWithDuration(
-//                1, animations: {
-//                    self.upcomingSideImageView.alpha = 1
-//                    print ("color CHANGEDDDDDDD upcoming")
-//                    
-//            })
-//        
-//        }
+
         
         //User Persistence)"
         let user = PFUser.currentUser()
@@ -81,12 +59,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidAppear(animated: Bool) {
         tabColor0()
-        tabColor1()
+        
         
     }
     
-    override func viewDidDisappear(animated: Bool) {
-        
+    override func viewWillDisappear(animated: Bool) {
+        tabColor1()
         
     }
     
