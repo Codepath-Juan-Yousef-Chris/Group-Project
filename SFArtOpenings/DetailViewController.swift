@@ -13,13 +13,23 @@ class DetailViewController: UIViewController {
     
     var event: PFObject?
 
+    @IBOutlet weak var galleryView: UIImageView!
     @IBOutlet weak var galleryLabelText: UILabel!
     @IBOutlet weak var exhibtionDescriptionLabel: UILabel!
     @IBOutlet weak var receptionTimeLabel: UILabel!
     
+    enum ErrorHandling:ErrorType{
+        case NetworkError
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let galleryImage1 = event!["galleryImage"] as? String
+        //print (galleryImage!)
+        load_image(galleryImage1!)
         
         let galleryName = event!["galleryName"] as? String
         let receptionTime = event!["receptionTime"] as? String
@@ -36,6 +46,28 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func load_image(urlString:String)
+    {
+        let imgURL = NSURL(string: urlString)
+        let request: NSURLRequest = NSURLRequest(URL: imgURL!)
+        
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request) {
+            (data, response, error) -> Void in
+            if (error == nil && data != nil)
+            {
+                func display_image()
+                {
+                    self.galleryView.image = UIImage(data: data!)
+                }
+                
+                dispatch_async(dispatch_get_main_queue(), display_image)
+            }
+        }
+        
+        task.resume()
     }
     
 

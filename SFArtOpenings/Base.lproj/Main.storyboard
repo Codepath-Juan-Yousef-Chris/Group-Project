@@ -128,7 +128,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InclineGallery" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-eO-sBn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-eO-sBn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="338"/>
                             </imageView>
                             <view alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H48-z2-hcp">
@@ -180,6 +180,7 @@
                     <connections>
                         <outlet property="exhibtionDescriptionLabel" destination="hcl-RW-PzS" id="HqK-5a-5bT"/>
                         <outlet property="galleryLabelText" destination="PhB-WR-xBQ" id="xpL-cn-TFE"/>
+                        <outlet property="galleryView" destination="kgV-eO-sBn" id="iLX-ij-ND1"/>
                         <outlet property="receptionTimeLabel" destination="jQG-k4-YbX" id="vel-0W-rBe"/>
                     </connections>
                 </viewController>
@@ -405,13 +406,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="InclineGallery" width="1600" height="1081"/>
         <image name="chatsmall" width="30" height="30"/>
         <image name="gpssmall" width="30" height="30"/>
         <image name="iconmonstr-star-6-64" width="64" height="64"/>
         <image name="settingssmall" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9sz-Dn-FAz"/>
+        <segue reference="yTN-DY-EzL"/>
     </inferredMetricsTieBreakers>
 </document>

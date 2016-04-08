@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
                 
                 
 
-                //self.dismissViewControllerAnimated(false, completion: nil)
+                self.dismissViewControllerAnimated(false, completion: nil)
                 
                 
                 //self.performSegueWithIdentifier("loginSegue", sender: nil)
