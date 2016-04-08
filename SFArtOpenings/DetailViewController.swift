@@ -17,6 +17,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var galleryLabelText: UILabel!
     @IBOutlet weak var exhibtionDescriptionLabel: UILabel!
     @IBOutlet weak var receptionTimeLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var lowerView: UIView!
+    
     
     enum ErrorHandling:ErrorType{
         case NetworkError
@@ -26,6 +29,8 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: lowerView.frame.origin.y + lowerView.frame.size.height)
         
         let galleryImage1 = event!["galleryImage"] as? String
         //print (galleryImage!)
@@ -37,6 +42,7 @@ class DetailViewController: UIViewController {
         galleryLabelText.text = galleryName
         receptionTimeLabel.text = receptionTime
         exhibtionDescriptionLabel.text = exhibitionDescription
+        
 //
 //        //print(event)
 
