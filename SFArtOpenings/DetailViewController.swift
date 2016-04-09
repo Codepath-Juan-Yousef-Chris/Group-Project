@@ -15,10 +15,11 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var galleryView: UIImageView!
     @IBOutlet weak var galleryLabelText: UILabel!
-    @IBOutlet weak var exhibtionDescriptionLabel: UILabel!
+    
     @IBOutlet weak var receptionTimeLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lowerView: UIView!
+    @IBOutlet weak var exhibitionDescriptionLabel: UILabel!
     
     
     enum ErrorHandling:ErrorType{
@@ -37,11 +38,16 @@ class DetailViewController: UIViewController {
         load_image(galleryImage1!)
         
         let galleryName = event!["galleryName"] as? String
-        let receptionTime = event!["receptionTime"] as? String
-        let exhibitionDescription = event!["description"] as? String
         galleryLabelText.text = galleryName
+        
+        let receptionTime = event!["receptionTime"] as? String
         receptionTimeLabel.text = receptionTime
-        exhibtionDescriptionLabel.text = exhibitionDescription
+        
+        let exhibitionDescription = event!["description"] as? String
+        exhibitionDescriptionLabel.text = exhibitionDescription
+        
+        exhibitionDescriptionLabel.sizeToFit()
+        
         
 //
 //        //print(event)
