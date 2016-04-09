@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var galleryView: UIImageView!
     @IBOutlet weak var galleryLabelText: UILabel!
-    
+    @IBOutlet weak var exhibitionNameLabel: UILabel!
     @IBOutlet weak var receptionTimeLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lowerView: UIView!
@@ -30,6 +30,9 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Trying to have the lowerView come on top of the galleryView
+        //lowerView.frame = CGRect(x: 0, y: 400, width: 320, height: 60 + exhibitionDescriptionLabel.frame.size.height)
         
         scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: lowerView.frame.origin.y + lowerView.frame.size.height)
         
@@ -46,7 +49,12 @@ class DetailViewController: UIViewController {
         let exhibitionDescription = event!["description"] as? String
         exhibitionDescriptionLabel.text = exhibitionDescription
         
-        exhibitionDescriptionLabel.sizeToFit()
+        // TRYING TO GET THE DESCRIPTION LABEL TO RESIZE TO FIT
+        //self.exhibitionDescriptionLabel.frame = CGRectZero
+        //exhibitionDescriptionLabel.sizeToFit()
+        
+        let exhibitionName = event!["exhibitionName"] as? String
+        exhibitionNameLabel.text = exhibitionName
         
         
 //
