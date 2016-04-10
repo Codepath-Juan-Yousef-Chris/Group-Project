@@ -46,7 +46,7 @@ class DetailViewController: UIViewController {
         let exhibitionDescription = event!["description"] as? String
         exhibitionDescriptionLabel.text = exhibitionDescription
         
-        // TRYING TO GET THE DESCRIPTION LABEL TO RESIZE TO FIT
+        // TRYING TO GET THE DESCRIPTION LABEL TO RESIZE TO FIT BUT IT'S NOT DOING IT
         //self.exhibitionDescriptionLabel.frame = CGRectZero
         exhibitionDescriptionLabel.sizeToFit()
         
@@ -54,52 +54,39 @@ class DetailViewController: UIViewController {
         exhibitionNameLabel.text = exhibitionName
         exhibitionNameLabel.sizeToFit()
         
-//        self.galleryView.alpha = 0
-//        self.scrollView.alpha = 0
-//        UIView.animateWithDuration(1.5, animations: {
-//            self.galleryView.alpha = 1
-//            self.scrollView.alpha = 1
-//        })
-//        
-    
-    
+        // Animating the picture and text
+        
         UIView.animateWithDuration(1) { () -> Void in
             self.galleryView.frame.size.height += 338
             self.galleryView.alpha = 1
         }
-        
-        self.receptionTimeLabel.alpha = 0
-        UIView.animateWithDuration(1, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.receptionTimeLabel.alpha = 1
-            }, completion: nil)
-        
-        self.galleryLabelText.alpha = 0
-        UIView.animateWithDuration(1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.galleryLabelText.alpha = 1
-            }, completion: nil)
+
+//        self.galleryView.alpha = 0
+//        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.galleryView.alpha = 1
+//            }, completion: nil)
         
         self.exhibitionNameLabel.alpha = 0
-        UIView.animateWithDuration(1, delay: 3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionNameLabel.alpha = 1
             }, completion: nil)
         
+        self.galleryLabelText.alpha = 0
+        UIView.animateWithDuration(1.8, delay: 2.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.galleryLabelText.alpha = 1
+            }, completion: nil)
+        
+        self.receptionTimeLabel.alpha = 0
+        UIView.animateWithDuration(1.8, delay: 3.3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.receptionTimeLabel.alpha = 1
+            }, completion: nil)
+        
         self.exhibitionDescriptionLabel.alpha = 0
-        UIView.animateWithDuration(1, delay: 4, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.8, delay: 4.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionDescriptionLabel.alpha = 1
             }, completion: nil)
         
-        
-        
-        
-        
-        
-//        
-//        UIView.animateWithDuration(1) { () -> Void in
-//            self.lowerView.frame.origin.y -= 338
-//        }
-        
-//
-//        //print(event)
+        //print(event)
 
         // Do any additional setup after loading the view.
     }
