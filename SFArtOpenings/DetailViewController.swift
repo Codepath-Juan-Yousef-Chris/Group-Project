@@ -20,6 +20,10 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var lowerView: UIView!
     @IBOutlet weak var exhibitionDescriptionLabel: UILabel!
+    @IBOutlet weak var receptionDateLabel: UILabel!
+    @IBOutlet weak var artistsLabel: UILabel!
+    @IBOutlet weak var galleryAdressLabel: UILabel!
+    
     
     
     enum ErrorHandling:ErrorType{
@@ -40,8 +44,17 @@ class DetailViewController: UIViewController {
         let galleryName = event!["galleryName"] as? String
         galleryLabelText.text = galleryName
         
+        let receptionDate = event!["receptionDate"] as? String
+        receptionDateLabel.text = receptionDate
+        
         let receptionTime = event!["receptionTime"] as? String
         receptionTimeLabel.text = receptionTime
+        
+        let artists = event!["artists"] as? String
+        artistsLabel.text = artists
+        
+        let galleryAddress = event!["galleryAddress"] as? String
+        galleryAdressLabel.text = galleryAddress
         
         let exhibitionDescription = event!["description"] as? String
         exhibitionDescriptionLabel.text = exhibitionDescription
@@ -67,23 +80,38 @@ class DetailViewController: UIViewController {
 //            }, completion: nil)
         
         self.exhibitionNameLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.8, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionNameLabel.alpha = 1
             }, completion: nil)
         
         self.galleryLabelText.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 2.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.8, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.galleryLabelText.alpha = 1
             }, completion: nil)
         
         self.receptionTimeLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 3.3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.receptionTimeLabel.alpha = 1
             }, completion: nil)
         
+        self.receptionDateLabel.alpha = 0
+        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.receptionDateLabel.alpha = 1
+            }, completion: nil)
+        
         self.exhibitionDescriptionLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 4.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionDescriptionLabel.alpha = 1
+            }, completion: nil)
+        
+        self.artistsLabel.alpha = 0
+        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.artistsLabel.alpha = 1
+            }, completion: nil)
+        
+        self.galleryAdressLabel.alpha = 0
+        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.galleryAdressLabel.alpha = 1
             }, completion: nil)
         
         //print(event)
