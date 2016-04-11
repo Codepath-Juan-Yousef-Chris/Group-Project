@@ -57,12 +57,10 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewWillAppear(animated: Bool) {
         parseAPICall()
-        
-    }
+            }
     
     override func viewDidAppear(animated: Bool) {
         tabColor0()
-        
         
     }
     

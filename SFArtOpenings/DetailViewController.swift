@@ -89,6 +89,10 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
             self.galleryView.alpha = 1
         }
 
+        UIView.animateWithDuration(1) { () -> Void in
+            self.lowerView.frame.size.height -= 1438
+        }
+        
 //        self.galleryView.alpha = 0
 //        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
 //            self.galleryView.alpha = 1
