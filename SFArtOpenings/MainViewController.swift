@@ -22,6 +22,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var upcomingSideImageView: UIImageView!
     
+    @IBOutlet weak var galleryImageView: UIImageView!
+    
+    
     var today: [PFObject]?
     
     var parseClass: String!
@@ -91,10 +94,15 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let galleryAddress = reception["galleryAddress"] as! String
         let receptionTime = reception["receptionTime"] as! String
         let receptionDate = reception["receptionDate"] as! String
+//        let galleryImage = reception["galleryImage"] as? String
+        //print (galleryImage!)
+//        load_image(galleryImageView, cell: ReceptionTableViewCell)
         cell.galleryNameLabel.text = galleryName
         cell.galleryAddressLabel.text = galleryAddress
         cell.startTimeLabel.text = receptionTime
         cell.startDateLabel.text = receptionDate
+        
+
         
         
         print("getting gallery name")
@@ -202,6 +210,28 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         }
     }
+    
+//    func load_image(urlString:String, cell: ReceptionTableViewCell)
+//    {
+//        let imgURL = NSURL(string: urlString)
+//        let request: NSURLRequest = NSURLRequest(URL: imgURL!)
+//        
+//        let session = NSURLSession.sharedSession()
+//        let task = session.dataTaskWithRequest(request) {
+//            (data, response, error) -> Void in
+//            if (error == nil && data != nil)
+//            {
+//                func display_image()
+//                {
+//                    cell.galleryImageView.image = UIImage(data: data!)
+//                }
+//                
+//                dispatch_async(dispatch_get_main_queue(), display_image)
+//            }
+//        }
+//        
+//        task.resume()
+//    }
     
    
     // MARK: - Navigation
