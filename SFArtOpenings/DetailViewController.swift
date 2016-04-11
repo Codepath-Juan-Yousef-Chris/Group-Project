@@ -8,8 +8,10 @@
 
 import UIKit
 import Parse
+import MapKit
+import CoreLocation
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, MKMapViewDelegate {
     
     var event: PFObject?
 
@@ -23,6 +25,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var receptionDateLabel: UILabel!
     @IBOutlet weak var artistsLabel: UILabel!
     @IBOutlet weak var galleryAdressLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     
     
@@ -34,6 +37,18 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //Code relating to the map
+        let longitude = event!["galleryLongitude"] as? Double
+        let lattitude = event!["galleryLattitude"] as? Double
+        mapView.delegate = self
+        mapView.setRegion(MKCoordinateRegionMake(CLLocationCoordinate2DMake(lattitude!, longitude!), MKCoordinateSpanMake(0.05, 0.05)), animated: false)
+        addPin()
+        
+        
+        
+        
         
         scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: lowerView.frame.origin.y + lowerView.frame.size.height)
         
@@ -146,6 +161,24 @@ class DetailViewController: UIViewController {
         task.resume()
     }
     
+    
+    //Pin on the Map
+    func addPin() {
+        let longitude = event!["galleryLongitude"] as? Double
+        let lattitude = event!["galleryLattitude"] as? Double
+        
+        let annotation = MKPointAnnotation()
+        var locationCoordinate = CLLocationCoordinate2DMake(lattitude!, longitude!)
+        annotation.coordinate = locationCoordinate
+        mapView.addAnnotation(annotation)
+    }
+    
+    //Getting Directions
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        var appleMapsURL = "http://maps.apple.com/?q=\(view.annotation!.coordinate.latitude),\(view.annotation!.coordinate.longitude)"
+        UIApplication.sharedApplication().openURL(NSURL(string: appleMapsURL)!)
+        
+    }
 
     /*
     // MARK: - Navigation
