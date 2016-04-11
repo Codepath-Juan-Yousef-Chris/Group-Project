@@ -31,7 +31,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceptionCell" rowHeight="96" id="WJy-aF-eRi" customClass="ReceptionTableViewCell" customModule="SFArtOpenings" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="300" height="96"/>
+                                        <rect key="frame" x="0.0" y="28" width="300" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WJy-aF-eRi" id="gi9-dk-mgo">
                                             <rect key="frame" x="0.0" y="0.0" width="300" height="95.5"/>
@@ -121,7 +121,6 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="galleryImageView" destination="M7P-YY-7dO" id="3Uf-Ae-oiV"/>
                         <outlet property="tableView" destination="zPJ-fN-PQW" id="t0J-Lt-oxS"/>
                         <outlet property="todaySideImageView" destination="GMn-66-56X" id="XQY-gc-cMO"/>
                         <outlet property="upcomingSideImageView" destination="cEr-K6-VIp" id="gfp-bJ-C93"/>
