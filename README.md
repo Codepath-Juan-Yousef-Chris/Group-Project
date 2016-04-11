@@ -51,3 +51,6 @@ Possible User stories:
 <center>![Walkthrough](groupgif.gif)</center>
 66 percent
 <center>![Walkthrough](groupgif2.gif)</center>
+100 percent
+<center>![Walkthrough](groupgif3.gif)</center>
+
