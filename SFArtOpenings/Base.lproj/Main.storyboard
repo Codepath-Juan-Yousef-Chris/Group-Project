@@ -19,16 +19,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-66-56X">
-                                <rect key="frame" x="-69" y="64" width="88" height="504"/>
-                                <color key="backgroundColor" red="0.2187562307" green="0.63534267840000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="-67" y="64" width="88" height="504"/>
+                                <color key="backgroundColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEr-K6-VIp">
-                                <rect key="frame" x="-69" y="64" width="88" height="504"/>
-                                <color key="backgroundColor" red="1" green="0.80498887259999996" blue="0.33398132400000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="-67" y="64" width="88" height="504"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-fN-PQW">
                                 <rect key="frame" x="20" y="64" width="300" height="504"/>
-                                <color key="backgroundColor" red="0.32549019607843138" green="0.46666666666666667" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceptionCell" rowHeight="96" id="WJy-aF-eRi" customClass="ReceptionTableViewCell" customModule="SFArtOpenings" customModuleProvider="target">
@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" id="gfn-U1-7Wy">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="settingssmall" id="92q-UD-Jfu">
-                            <color key="tintColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="NoG-Xb-ewf" kind="push" id="6Sb-9N-EOD"/>
                             </connections>
@@ -101,14 +101,16 @@
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="794-Aa-bKu">
                             <rect key="frame" x="141" y="7" width="38" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Login"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
                             <connections>
                                 <segue destination="6nb-Gz-R1w" kind="presentation" identifier="loginSegue" id="yTN-DY-EzL"/>
                             </connections>
                         </button>
                         <rightBarButtonItems>
                             <barButtonItem image="chatsmall" id="AD0-ux-0hg">
-                                <color key="tintColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="jUp-10-iO4" kind="popoverPresentation" popoverAnchorBarButtonItem="AD0-ux-0hg" id="cYx-8c-n0A">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -116,7 +118,7 @@
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="gpssmall" id="klm-vp-E0J">
-                                <color key="tintColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="Ygp-9Q-aaL" kind="push" id="I4d-Fv-LHd"/>
                                 </connections>
@@ -170,6 +172,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kgV-eO-sBn">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="338"/>
                             </imageView>
+                            <view alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lB8-Ok-41e">
+                                <rect key="frame" x="13" y="241" width="80" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-i4-1fy">
+                                        <rect key="frame" x="19" y="8" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
+                                        <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tt-GV-pef">
+                                        <rect key="frame" x="13" y="27" width="59" height="50"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="43"/>
+                                        <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRX-36-clR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -264,9 +284,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oUr-H0-Mu5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
