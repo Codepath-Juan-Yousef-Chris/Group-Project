@@ -26,6 +26,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var artistsLabel: UILabel!
     @IBOutlet weak var galleryAdressLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var thumbDayView: UIView!
     
     
     
@@ -46,9 +47,9 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         mapView.setRegion(MKCoordinateRegionMake(CLLocationCoordinate2DMake(lattitude!, longitude!), MKCoordinateSpanMake(0.05, 0.05)), animated: false)
         addPin()
         
-        
-        
-        
+        // Code to round the thumbDayView's corners
+        thumbDayView.layer.cornerRadius = 3
+        thumbDayView.clipsToBounds = true
         
         scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height: lowerView.frame.origin.y + lowerView.frame.size.height)
         
@@ -99,33 +100,58 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 //            }, completion: nil)
         
         self.exhibitionNameLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionNameLabel.alpha = 1
             }, completion: nil)
         
         self.galleryLabelText.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.galleryLabelText.alpha = 1
             }, completion: nil)
         
         self.receptionTimeLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.receptionTimeLabel.alpha = 1
             }, completion: nil)
         
-        self.receptionDateLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.receptionDateLabel.alpha = 1
+        self.artistsLabel.alpha = 0
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.artistsLabel.alpha = 1
             }, completion: nil)
+        
+        
+        
+        
+//        self.exhibitionNameLabel.alpha = 0
+//        UIView.animateWithDuration(1.8, delay: 0.3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.exhibitionNameLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.galleryLabelText.alpha = 0
+//        UIView.animateWithDuration(1.8, delay: 0.7, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.galleryLabelText.alpha = 1
+//            }, completion: nil)
+//        
+//        self.receptionTimeLabel.alpha = 0
+//        UIView.animateWithDuration(1.8, delay: 1.1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.receptionTimeLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.artistsLabel.alpha = 0
+//        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.artistsLabel.alpha = 1
+//            }, completion: nil)
+        
+        
+        
+        self.receptionDateLabel.alpha = 0
+//        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.receptionDateLabel.alpha = 1
+//            }, completion: nil)
         
         self.exhibitionDescriptionLabel.alpha = 0
         UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionDescriptionLabel.alpha = 1
-            }, completion: nil)
-        
-        self.artistsLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.artistsLabel.alpha = 1
             }, completion: nil)
         
         self.galleryAdressLabel.alpha = 0
