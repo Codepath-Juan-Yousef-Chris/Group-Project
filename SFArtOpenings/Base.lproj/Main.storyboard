@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0oe-fs-0x6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0oe-fs-0x6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -19,23 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMn-66-56X">
-                                <rect key="frame" x="-67" y="64" width="88" height="504"/>
-                                <color key="backgroundColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="-76" y="64" width="88" height="504"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.46666666670000001" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cEr-K6-VIp">
-                                <rect key="frame" x="-67" y="64" width="88" height="504"/>
+                                <rect key="frame" x="-76" y="64" width="88" height="504"/>
                                 <color key="backgroundColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-fN-PQW">
-                                <rect key="frame" x="20" y="64" width="300" height="504"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="separatorColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            <tableView clipsSubviews="YES" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="96" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zPJ-fN-PQW">
+                                <rect key="frame" x="12" y="64" width="308" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceptionCell" rowHeight="96" id="WJy-aF-eRi" customClass="ReceptionTableViewCell" customModule="SFArtOpenings" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="300" height="96"/>
+                                        <rect key="frame" x="0.0" y="28" width="308" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WJy-aF-eRi" id="gi9-dk-mgo">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="95.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="308" height="95.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" alpha="0.14999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQU-6q-eYH">
@@ -44,19 +44,19 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-2t-kv4">
                                                     <rect key="frame" x="76" y="0.0" width="224" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <color key="textColor" red="0.92549019607843142" green="0.81568627450980391" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="685 Market St., San Francisco, CA 94118" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-kp-pad">
                                                     <rect key="frame" x="76" y="22" width="216" height="43"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" red="0.92549019607843142" green="0.81568627450980391" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-iW-JIC">
                                                     <rect key="frame" x="8" y="66" width="113" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconmonstr-star-6-64" translatesAutoresizingMaskIntoConstraints="NO" id="J28-LB-QNX">
@@ -65,7 +65,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 28th 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrB-7s-TXn">
                                                     <rect key="frame" x="141" y="66" width="118" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                    <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M7P-YY-7dO">
@@ -73,7 +73,6 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <accessibility key="accessibilityConfiguration" identifier="ReceptionCell"/>
                                         <connections>
                                             <outlet property="galleryAddressLabel" destination="n3p-kp-pad" id="pse-6T-ijh"/>
@@ -93,7 +92,7 @@
                     <navigationItem key="navigationItem" id="gfn-U1-7Wy">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="settingssmall" id="92q-UD-Jfu">
-                            <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="NoG-Xb-ewf" kind="push" id="6Sb-9N-EOD"/>
                             </connections>
@@ -102,7 +101,7 @@
                             <rect key="frame" x="141" y="7" width="38" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Login">
-                                <color key="titleColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <segue destination="6nb-Gz-R1w" kind="presentation" identifier="loginSegue" id="yTN-DY-EzL"/>
@@ -110,7 +109,7 @@
                         </button>
                         <rightBarButtonItems>
                             <barButtonItem image="chatsmall" id="AD0-ux-0hg">
-                                <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="jUp-10-iO4" kind="popoverPresentation" popoverAnchorBarButtonItem="AD0-ux-0hg" id="cYx-8c-n0A">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -118,7 +117,7 @@
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="gpssmall" id="klm-vp-E0J">
-                                <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <segue destination="Ygp-9Q-aaL" kind="push" id="I4d-Fv-LHd"/>
                                 </connections>
@@ -196,39 +195,45 @@
                                     <view alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1z-yt-R2A" userLabel="Lower View">
                                         <rect key="frame" x="0.0" y="338" width="320" height="1100"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-WR-xBQ">
-                                                <rect key="frame" x="8" y="68" width="304" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.92549019607843142" green="0.81568627450980391" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjE-2a-zt4">
                                                 <rect key="frame" x="8" y="6" width="304" height="55"/>
                                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="21"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-WR-xBQ">
+                                                <rect key="frame" x="8" y="75" width="304" height="21"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="20"/>
+                                                <color key="textColor" red="0.92549019607843142" green="0.81568627450980391" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:30pm - 8pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-k4-YbX">
+                                                <rect key="frame" x="166" y="111" width="146" height="21"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-TN-snN">
+                                                <rect key="frame" x="8" y="152.5" width="304" height="59.5"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="15"/>
+                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-RW-PzS">
                                                 <rect key="frame" x="8" y="244" width="304" height="439"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="16"/>
+                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1275 Minnesota Street, San Francisco" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-YQ-wSb">
+                                                <rect key="frame" x="8" y="814" width="304" height="42"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 28 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkk-IJ-IfU">
                                                 <rect key="frame" x="8" y="104" width="103" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-TN-snN">
-                                                <rect key="frame" x="8" y="133" width="304" height="59.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1275 Minnesota Street, San Francisco" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-YQ-wSb">
-                                                <rect key="frame" x="8" y="200" width="304" height="42"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -238,12 +243,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4R-fw-Ix3">
                                                 <rect key="frame" x="8" y="885" width="34" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:30pm - 8pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-k4-YbX">
-                                                <rect key="frame" x="166" y="102" width="146" height="21"/>
-                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -269,6 +268,7 @@
                         <outlet property="receptionDateLabel" destination="nkk-IJ-IfU" id="ZVg-6W-dNe"/>
                         <outlet property="receptionTimeLabel" destination="jQG-k4-YbX" id="vel-0W-rBe"/>
                         <outlet property="scrollView" destination="DRX-36-clR" id="JI3-Dc-nJl"/>
+                        <outlet property="thumbDayView" destination="lB8-Ok-41e" id="hjr-rz-p3E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlK-Yh-TTu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,10 +284,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oUr-H0-Mu5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
+                        <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
