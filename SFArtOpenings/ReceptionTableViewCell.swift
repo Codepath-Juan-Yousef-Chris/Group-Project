@@ -18,7 +18,7 @@ class ReceptionTableViewCell: UITableViewCell {
     
     @IBOutlet weak var startTimeLabel: UILabel!
     
-    @IBOutlet weak var myFavoritesView: UIImageView!
+   // @IBOutlet weak var myFavoritesView: UIImageView!
     
     @IBOutlet weak var startDateLabel: UILabel!
     
