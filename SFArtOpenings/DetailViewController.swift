@@ -27,6 +27,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var galleryAdressLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var thumbDayView: UIView!
+    @IBOutlet weak var lineView: UIImageView!
     
     
     
@@ -100,6 +101,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.exhibitionNameLabel.alpha = 0
         UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionNameLabel.alpha = 1
+            }, completion: nil)
+        
+        self.lineView.alpha = 0
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.lineView.alpha = 1
             }, completion: nil)
         
         self.galleryLabelText.alpha = 0
