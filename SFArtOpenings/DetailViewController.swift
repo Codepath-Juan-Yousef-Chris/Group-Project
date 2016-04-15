@@ -62,7 +62,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         galleryLabelText.text = galleryName
         
         let receptionDate = event!["receptionDate"] as? String
-        receptionDateLabel.text = receptionDate
+        //receptionDateLabel.text = receptionDate
         
         let receptionTime = event!["receptionTime"] as? String
         receptionTimeLabel.text = receptionTime
@@ -148,7 +148,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         
         
-        self.receptionDateLabel.alpha = 0
+        //self.receptionDateLabel.alpha = 0
 //        UIView.animateWithDuration(1.8, delay: 1, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
 //            self.receptionDateLabel.alpha = 1
 //            }, completion: nil)
