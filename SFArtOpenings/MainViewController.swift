@@ -92,11 +92,16 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let galleryAddress = reception["galleryAddress"] as! String
         let receptionTime = reception["receptionTime"] as! String
         let receptionDate = reception["receptionDate"] as! String
-//        let galleryImage = reception["galleryImage"] as? String
-        //print (galleryImage!)
-//        load_image(galleryImageView, cell: ReceptionTableViewCell)
+        let galleryImage = reception["galleryImage"] as? String
+        
+        if let galleryImage = galleryImage {
+            load_image(galleryImage, cell: cell)
+        }
+        
+        
         cell.galleryNameLabel.text = galleryName
         cell.galleryAddressLabel.text = galleryAddress
+        cell.galleryAddressLabel.sizeToFit()
         cell.startTimeLabel.text = receptionTime
         cell.startDateLabel.text = receptionDate
         
@@ -209,27 +214,27 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-//    func load_image(urlString:String, cell: ReceptionTableViewCell)
-//    {
-//        let imgURL = NSURL(string: urlString)
-//        let request: NSURLRequest = NSURLRequest(URL: imgURL!)
-//        
-//        let session = NSURLSession.sharedSession()
-//        let task = session.dataTaskWithRequest(request) {
-//            (data, response, error) -> Void in
-//            if (error == nil && data != nil)
-//            {
-//                func display_image()
-//                {
-//                    cell.galleryImageView.image = UIImage(data: data!)
-//                }
-//                
-//                dispatch_async(dispatch_get_main_queue(), display_image)
-//            }
-//        }
-//        
-//        task.resume()
-//    }
+    func load_image(urlString:String, cell: ReceptionTableViewCell)
+    {
+        let imgURL = NSURL(string: urlString)
+        let request: NSURLRequest = NSURLRequest(URL: imgURL!)
+        
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request) {
+            (data, response, error) -> Void in
+            if (error == nil && data != nil)
+            {
+                func display_image()
+                {
+                    cell.galleryImageView.image = UIImage(data: data!)
+                }
+                
+                dispatch_async(dispatch_get_main_queue(), display_image)
+            }
+        }
+        
+        task.resume()
+    }
     
    
     // MARK: - Navigation
