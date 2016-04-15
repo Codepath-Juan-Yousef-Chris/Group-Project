@@ -196,32 +196,26 @@
                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-WR-xBQ">
-                                                <rect key="frame" x="8" y="75" width="304" height="21"/>
+                                                <rect key="frame" x="20" y="75" width="304" height="21"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
                                                 <color key="textColor" red="0.92549019607843142" green="0.81568627450980391" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:30pm - 8pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-k4-YbX">
-                                                <rect key="frame" x="186" y="101" width="126" height="24"/>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-TN-snN">
+                                                <rect key="frame" x="20" y="133" width="280" height="48.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-TN-snN">
-                                                <rect key="frame" x="8" y="133" width="304" height="48.5"/>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-RW-PzS">
+                                                <rect key="frame" x="8" y="189" width="304" height="19"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1275 Minnesota Street, San Francisco" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-YQ-wSb">
                                                 <rect key="frame" x="8" y="814" width="304" height="56"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
-                                                <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 28 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkk-IJ-IfU">
-                                                <rect key="frame" x="8" y="104" width="103" height="21"/>
-                                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="17"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -234,9 +228,12 @@
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-RW-PzS">
-                                                <rect key="frame" x="8" y="189" width="304" height="19"/>
-                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line2" translatesAutoresizingMaskIntoConstraints="NO" id="bQU-RL-JUD">
+                                                <rect key="frame" x="20" y="51" width="280" height="16"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:30pm - 8pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-k4-YbX">
+                                                <rect key="frame" x="20" y="103" width="180" height="20"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
                                                 <color key="textColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -257,9 +254,9 @@
                         <outlet property="galleryAdressLabel" destination="ZE4-YQ-wSb" id="E2M-1J-Jlg"/>
                         <outlet property="galleryLabelText" destination="PhB-WR-xBQ" id="xpL-cn-TFE"/>
                         <outlet property="galleryView" destination="kgV-eO-sBn" id="iLX-ij-ND1"/>
+                        <outlet property="lineView" destination="bQU-RL-JUD" id="ICW-lf-lUi"/>
                         <outlet property="lowerView" destination="G1z-yt-R2A" id="pCq-eC-Zox"/>
                         <outlet property="mapView" destination="ecN-BA-fyf" id="Zf4-Eq-oIk"/>
-                        <outlet property="receptionDateLabel" destination="nkk-IJ-IfU" id="ZVg-6W-dNe"/>
                         <outlet property="receptionTimeLabel" destination="jQG-k4-YbX" id="vel-0W-rBe"/>
                         <outlet property="scrollView" destination="DRX-36-clR" id="JI3-Dc-nJl"/>
                         <outlet property="thumbDayView" destination="lB8-Ok-41e" id="hjr-rz-p3E"/>
@@ -361,20 +358,6 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Z-l5-tci">
-                                        <rect key="frame" x="97" y="296" width="47" height="30"/>
-                                        <state key="normal" title="Sign In"/>
-                                        <connections>
-                                            <action selector="onSignIn:" destination="6nb-Gz-R1w" eventType="touchUpInside" id="NIo-WC-vq5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-n3-SgN">
-                                        <rect key="frame" x="93" y="334" width="55" height="30"/>
-                                        <state key="normal" title="Sign Up"/>
-                                        <connections>
-                                            <action selector="onSignUp:" destination="6nb-Gz-R1w" eventType="touchUpInside" id="Bms-1h-IhV"/>
-                                        </connections>
-                                    </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C3K-7b-bG1">
                                         <rect key="frame" x="82" y="180" width="74" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -387,19 +370,34 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcR-n3-SgN">
+                                        <rect key="frame" x="57" y="301" width="125" height="49"/>
+                                        <state key="normal" title="Sign Up" image="B_Up"/>
+                                        <connections>
+                                            <action selector="onSignUp:" destination="6nb-Gz-R1w" eventType="touchUpInside" id="Bms-1h-IhV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Z-l5-tci">
+                                        <rect key="frame" x="58" y="259" width="125" height="49"/>
+                                        <state key="normal" title="Sign In" image="B_In-1"/>
+                                        <connections>
+                                            <action selector="onSignIn:" destination="6nb-Gz-R1w" eventType="touchUpInside" id="NIo-WC-vq5"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-Xp-SFF">
-                                <rect key="frame" x="132" y="93" width="57" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Logout"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtj-Xp-SFF">
+                                <rect key="frame" x="75" y="88" width="171" height="59"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="onLogout:" destination="6nb-Gz-R1w" eventType="touchUpInside" id="1Hx-Tm-Zjh"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -517,11 +515,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="B_In-1" width="170" height="59"/>
+        <image name="B_Up" width="170" height="59"/>
         <image name="chatsmall" width="30" height="30"/>
         <image name="gpssmall" width="30" height="30"/>
+        <image name="line2" width="300" height="31"/>
         <image name="settingssmall" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9sz-Dn-FAz"/>
+        <segue reference="yTN-DY-EzL"/>
     </inferredMetricsTieBreakers>
 </document>
