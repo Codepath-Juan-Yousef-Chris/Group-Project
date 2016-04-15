@@ -75,9 +75,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         let exhibitionDescription = event!["description"] as? String
         exhibitionDescriptionLabel.text = exhibitionDescription
         
-        // TRYING TO GET THE DESCRIPTION LABEL TO RESIZE TO FIT BUT IT'S NOT DOING IT
-        //self.exhibitionDescriptionLabel.frame = CGRectZero
-        exhibitionDescriptionLabel.sizeToFit()
+        //exhibitionDescriptionLabel.sizeToFit()
         
         let exhibitionName = event!["exhibitionName"] as? String
         exhibitionNameLabel.text = exhibitionName
