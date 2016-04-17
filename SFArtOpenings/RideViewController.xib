@@ -36,13 +36,13 @@
                     <color key="textColor" red="0.98762309650000002" green="1" blue="0.99502727099999999" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-4d-VRT">
-                    <rect key="frame" x="133" y="137" width="34" height="30"/>
-                    <state key="normal" title="Uber"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-4d-VRT">
+                    <rect key="frame" x="71" y="118" width="158" height="43"/>
+                    <state key="normal" title="Uber" image="uber"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-XL-7GV">
-                    <rect key="frame" x="135" y="208" width="30" height="30"/>
-                    <state key="normal" title="Lyft"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-XL-7GV">
+                    <rect key="frame" x="86" y="197" width="129" height="69"/>
+                    <state key="normal" title="Lyft" image="lyft"/>
                 </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -62,4 +62,8 @@
             <point key="canvasLocation" x="366" y="342"/>
         </view>
     </objects>
+    <resources>
+        <image name="lyft" width="2000" height="1417"/>
+        <image name="uber" width="4222" height="1000"/>
+    </resources>
 </document>
