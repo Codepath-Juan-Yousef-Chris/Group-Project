@@ -76,14 +76,6 @@ class LoginViewController: UIViewController {
         
     }
 
-    @IBAction func onLogout(sender: AnyObject) {
-        PFUser.logOut()
-        
-        self.dismissViewControllerAnimated(false, completion: nil)
-        
-        print("bye!")
-    }
-
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
