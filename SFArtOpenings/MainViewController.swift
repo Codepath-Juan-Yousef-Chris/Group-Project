@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AFNetworking
+//import AFNetworking
 import Parse
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -39,8 +39,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         usernameBarButton.setTitle(user?.username, forState: UIControlState.Normal)
         
         
-        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
-        tableView.addSubview(refreshControl)
+        //refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+        //tableView.addSubview(refreshControl)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -234,6 +234,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         
         task.resume()
+    }
+    
+    @IBAction func getRide(sender: AnyObject) {
+        
+        let vc = RideViewController()
+        self.presentViewController(vc, animated: true, completion: nil)
+        
     }
     
    

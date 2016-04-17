@@ -38,7 +38,7 @@ class LoginViewController: UIViewController {
                 
                 
 
-                self.dismissViewControllerAnimated(false, completion: nil)
+                self.dismissViewControllerAnimated(true, completion: nil)
                 
                 
                 //self.performSegueWithIdentifier("loginSegue", sender: nil)
@@ -56,7 +56,7 @@ class LoginViewController: UIViewController {
             if success {
                 print("Thanks for signing up!")
                 
-                self.dismissViewControllerAnimated(false, completion: nil)
+                self.dismissViewControllerAnimated(true, completion: nil)
                 
                 //self.performSegueWithIdentifier("loginSegue", sender: nil)
             } else {
@@ -71,7 +71,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func onCancel(sender: AnyObject) {
         
-        self.dismissViewControllerAnimated(false, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
         print("canceled")
         
     }
