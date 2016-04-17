@@ -236,6 +236,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         task.resume()
     }
     
+    @IBAction func getRide(sender: AnyObject) {
+        
+        let vc = RideViewController()
+        self.presentViewController(vc, animated: true, completion: nil)
+        
+    }
+    
    
     // MARK: - Navigation
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		54046E801CA2A017002AF7DE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54046E7F1CA2A017002AF7DE /* DetailViewController.swift */; };
+		541CD6381CC2E1D400040CC0 /* RideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CD6371CC2E1D400040CC0 /* RideViewController.swift */; };
+		541CD63C1CC2EE9200040CC0 /* RideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541CD63B1CC2EE9200040CC0 /* RideViewController.xib */; };
+		541CD63E1CC3006900040CC0 /* RideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CD63D1CC3006900040CC0 /* RideTransition.swift */; };
 		542504001C9154EA0092AE3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542503FF1C9154EA0092AE3B /* MainViewController.swift */; };
 		542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542504031C9156170092AE3B /* ReceptionTableViewCell.swift */; };
 		542F55001CBB0C230094A1E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F54FF1CBB0C230094A1E7 /* MapKit.framework */; };
@@ -27,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		54046E7F1CA2A017002AF7DE /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		541CD6371CC2E1D400040CC0 /* RideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideViewController.swift; sourceTree = "<group>"; };
+		541CD63B1CC2EE9200040CC0 /* RideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideViewController.xib; sourceTree = "<group>"; };
+		541CD63D1CC3006900040CC0 /* RideTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTransition.swift; sourceTree = "<group>"; };
 		542503FF1C9154EA0092AE3B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		542504031C9156170092AE3B /* ReceptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewCell.swift; sourceTree = "<group>"; };
 		542F54FF1CBB0C230094A1E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -79,6 +85,8 @@
 				54046E7F1CA2A017002AF7DE /* DetailViewController.swift */,
 				546168761C9F7C9A00DC6D0D /* LoginViewController.swift */,
 				5461687A1C9F969300DC6D0D /* ChatViewController.swift */,
+				541CD6371CC2E1D400040CC0 /* RideViewController.swift */,
+				541CD63D1CC3006900040CC0 /* RideTransition.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -118,6 +126,7 @@
 				542504011C9154FB0092AE3B /* View Controllers */,
 				6AEAC5DC1C800D9C0018063A /* AppDelegate.swift */,
 				6AEAC5E01C800D9C0018063A /* Main.storyboard */,
+				541CD63B1CC2EE9200040CC0 /* RideViewController.xib */,
 				542504031C9156170092AE3B /* ReceptionTableViewCell.swift */,
 				6AEAC5E31C800D9C0018063A /* Assets.xcassets */,
 				6AEAC5E51C800D9C0018063A /* LaunchScreen.storyboard */,
@@ -198,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541CD63C1CC2EE9200040CC0 /* RideViewController.xib in Resources */,
 				6AEAC5E71C800D9C0018063A /* LaunchScreen.storyboard in Resources */,
 				6AEAC5E41C800D9C0018063A /* Assets.xcassets in Resources */,
 				6AEAC5E21C800D9C0018063A /* Main.storyboard in Resources */,
@@ -262,12 +272,14 @@
 				546168771C9F7C9A00DC6D0D /* LoginViewController.swift in Sources */,
 				542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */,
 				5461687B1C9F969300DC6D0D /* ChatViewController.swift in Sources */,
+				541CD6381CC2E1D400040CC0 /* RideViewController.swift in Sources */,
 				6A07240C1CA0A79500278720 /* ChatTableViewCell.swift in Sources */,
 				546168751C9E1EBD00DC6D0D /* Upcoming.swift in Sources */,
 				542504001C9154EA0092AE3B /* MainViewController.swift in Sources */,
 				6AEAC5DD1C800D9C0018063A /* AppDelegate.swift in Sources */,
 				54046E801CA2A017002AF7DE /* DetailViewController.swift in Sources */,
 				546168731C9E1EB100DC6D0D /* Today.swift in Sources */,
+				541CD63E1CC3006900040CC0 /* RideTransition.swift in Sources */,
 				546168791C9F867E00DC6D0D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

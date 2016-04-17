@@ -59,8 +59,15 @@
                                                     <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-Bc-87H">
+                                                    <rect key="frame" x="268" y="57" width="34" height="31"/>
+                                                    <state key="normal" title="Ride" image="getride"/>
+                                                    <connections>
+                                                        <action selector="getRide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B31-IL-P1b"/>
+                                                    </connections>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 28th 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrB-7s-TXn">
-                                                    <rect key="frame" x="166" y="67" width="118" height="21"/>
+                                                    <rect key="frame" x="142" y="68" width="118" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -518,6 +525,7 @@
         <image name="B_In-1" width="170" height="59"/>
         <image name="B_Up" width="170" height="59"/>
         <image name="chatsmall" width="30" height="30"/>
+        <image name="getride" width="128" height="128"/>
         <image name="gpssmall" width="30" height="30"/>
         <image name="line2" width="300" height="31"/>
         <image name="settingssmall" width="30" height="30"/>

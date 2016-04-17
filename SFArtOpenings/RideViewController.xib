@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RideViewController" customModule="SFArtOpenings" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="574-mf-rQh" id="WMC-Wa-cgp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="574-mf-rQh" userLabel="AlertView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="364"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiQ-AP-QuH">
+                    <rect key="frame" x="20" y="314" width="260" height="30"/>
+                    <state key="normal" title="Take me back!">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doDismiss:" destination="-1" eventType="touchUpInside" id="mwt-gc-dR1"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvo-Lw-v8L" userLabel="DividerView">
+                    <rect key="frame" x="24" y="62" width="253" height="1"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="fow-AZ-flo"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Get a Ride" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKC-02-gE7">
+                    <rect key="frame" x="110" y="25" width="80" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.98762309650000002" green="1" blue="0.99502727099999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-4d-VRT">
+                    <rect key="frame" x="71" y="118" width="158" height="43"/>
+                    <state key="normal" title="Uber" image="uber"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-XL-7GV">
+                    <rect key="frame" x="86" y="197" width="129" height="69"/>
+                    <state key="normal" title="Lyft" image="lyft"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="tintColor" red="0.98762309650000002" green="1" blue="0.99502727099999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wvo-Lw-v8L" secondAttribute="trailing" constant="20" id="1bL-63-F41"/>
+                <constraint firstAttribute="bottom" secondItem="AiQ-AP-QuH" secondAttribute="bottom" constant="20" id="Lgb-IY-9r6"/>
+                <constraint firstAttribute="width" constant="230" id="eBh-3g-Y5X"/>
+                <constraint firstAttribute="height" constant="126" id="esg-5D-8gg"/>
+                <constraint firstItem="Wvo-Lw-v8L" firstAttribute="top" secondItem="574-mf-rQh" secondAttribute="top" constant="66" id="gKy-H0-fFK"/>
+                <constraint firstItem="AiQ-AP-QuH" firstAttribute="leading" secondItem="574-mf-rQh" secondAttribute="leading" constant="20" id="ivM-qz-Z4w"/>
+                <constraint firstAttribute="trailing" secondItem="AiQ-AP-QuH" secondAttribute="trailing" constant="20" id="sO1-cZ-gF3"/>
+                <constraint firstItem="Wvo-Lw-v8L" firstAttribute="leading" secondItem="574-mf-rQh" secondAttribute="leading" constant="27" id="w4d-e2-pId"/>
+                <constraint firstItem="TKC-02-gE7" firstAttribute="top" secondItem="574-mf-rQh" secondAttribute="top" constant="25" id="zTf-cI-EB7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="366" y="342"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lyft" width="2000" height="1417"/>
+        <image name="uber" width="4222" height="1000"/>
+    </resources>
+</document>
