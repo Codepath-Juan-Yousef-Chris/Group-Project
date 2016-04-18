@@ -12,6 +12,7 @@
 		541CD63C1CC2EE9200040CC0 /* RideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541CD63B1CC2EE9200040CC0 /* RideViewController.xib */; };
 		541CD63E1CC3006900040CC0 /* RideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CD63D1CC3006900040CC0 /* RideTransition.swift */; };
 		541CD6431CC315CE00040CC0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541CD6421CC315CE00040CC0 /* SettingsViewController.swift */; };
+		541CD6461CC5910800040CC0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 541CD6451CC5910800040CC0 /* Social.framework */; };
 		542504001C9154EA0092AE3B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542503FF1C9154EA0092AE3B /* MainViewController.swift */; };
 		542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542504031C9156170092AE3B /* ReceptionTableViewCell.swift */; };
 		542F55001CBB0C230094A1E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542F54FF1CBB0C230094A1E7 /* MapKit.framework */; };
@@ -35,6 +36,7 @@
 		541CD63B1CC2EE9200040CC0 /* RideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RideViewController.xib; sourceTree = "<group>"; };
 		541CD63D1CC3006900040CC0 /* RideTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTransition.swift; sourceTree = "<group>"; };
 		541CD6421CC315CE00040CC0 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		541CD6451CC5910800040CC0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		542503FF1C9154EA0092AE3B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		542504031C9156170092AE3B /* ReceptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceptionTableViewCell.swift; sourceTree = "<group>"; };
 		542F54FF1CBB0C230094A1E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				541CD6461CC5910800040CC0 /* Social.framework in Frameworks */,
 				542F55021CBB0C350094A1E7 /* CoreLocation.framework in Frameworks */,
 				542F55001CBB0C230094A1E7 /* MapKit.framework in Frameworks */,
 				A4B832FF75F1A2274170EB3D /* Pods_SFArtOpenings.framework in Frameworks */,
@@ -73,6 +76,7 @@
 		4D1A221E455442C4594247BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				541CD6451CC5910800040CC0 /* Social.framework */,
 				542F55011CBB0C350094A1E7 /* CoreLocation.framework */,
 				542F54FF1CBB0C230094A1E7 /* MapKit.framework */,
 				9A105503178D7C92847E1B56 /* Pods_SFArtOpenings.framework */,
