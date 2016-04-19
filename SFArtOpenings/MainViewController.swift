@@ -18,9 +18,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var refreshControl = UIRefreshControl()
     
-    @IBOutlet weak var todaySideImageView: UIImageView!
+    //@IBOutlet weak var todaySideImageView: UIImageView!
     
-    @IBOutlet weak var upcomingSideImageView: UIImageView!
+    //@IBOutlet weak var upcomingSideImageView: UIImageView!
     
     @IBOutlet weak var galleryImageView: UIImageView!
     
@@ -59,15 +59,15 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         parseAPICall()
             }
     
-    override func viewDidAppear(animated: Bool) {
-        tabColor0()
-        
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        tabColor1()
-        
-    }
+//    override func viewDidAppear(animated: Bool) {
+//        tabColor0()
+//        
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool) {
+//        tabColor1()
+//        
+//    }
     
 
 
@@ -159,60 +159,60 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-    func tabColor0 () {
-        if parseClass == "Today" {
-            UIView.animateWithDuration(1, animations: {
-                
-                self.todaySideImageView.alpha = 1
-//                UIView.animateWithDuration(1, animations: {
-//                    self.upcomingSideImageView.alpha = 0
-//                    print("CHANGEDDDDDDDDDD Upcoming back to 0000000000")
-//                })
-                
-                
-                
-            })
-            
-        } else if parseClass == "Upcoming"{
-            
-            UIView.animateWithDuration(
-                1, animations: {
-                    self.upcomingSideImageView.alpha = 1
-//                UIView.animateWithDuration(1, animations: {
-//                    self.todaySideImageView.alpha = 0
-//                    print("CHANGEDDDDDDDDDD today back to 0000000000")
-//                })
-    
-                    
-            })
-            
-        }
-    }
-    
-    func tabColor1 () {
-            
-            if parseClass == "Today" {
-                
-                                                    UIView.animateWithDuration(1, animations: {
-                                        self.upcomingSideImageView.alpha = 0
-                                        print("CHANGEDDDDDDDDDD Upcoming back to 0000000000")
-                                    })
-                
-                    
-                    
-
-                
-            } else if parseClass == "Upcoming"{
-                
-                                        UIView.animateWithDuration(1, animations: {
-                                            self.todaySideImageView.alpha = 0
-                                            print("CHANGEDDDDDDDDDD today back to 0000000000")
-                                        })
-                
-                
-            
-        }
-    }
+//    func tabColor0 () {
+//        if parseClass == "Today" {
+//            UIView.animateWithDuration(1, animations: {
+//                
+//                self.todaySideImageView.alpha = 1
+////                UIView.animateWithDuration(1, animations: {
+////                    self.upcomingSideImageView.alpha = 0
+////                    print("CHANGEDDDDDDDDDD Upcoming back to 0000000000")
+////                })
+//                
+//                
+//                
+//            })
+//            
+//        } else if parseClass == "Upcoming"{
+//            
+//            UIView.animateWithDuration(
+//                1, animations: {
+//                    self.upcomingSideImageView.alpha = 1
+////                UIView.animateWithDuration(1, animations: {
+////                    self.todaySideImageView.alpha = 0
+////                    print("CHANGEDDDDDDDDDD today back to 0000000000")
+////                })
+//    
+//                    
+//            })
+//            
+//        }
+//    }
+//    
+//    func tabColor1 () {
+//            
+//            if parseClass == "Today" {
+//                
+//                                                    UIView.animateWithDuration(1, animations: {
+//                                        self.upcomingSideImageView.alpha = 0
+//                                        print("CHANGEDDDDDDDDDD Upcoming back to 0000000000")
+//                                    })
+//                
+//                    
+//                    
+//
+//                
+//            } else if parseClass == "Upcoming"{
+//                
+//                                        UIView.animateWithDuration(1, animations: {
+//                                            self.todaySideImageView.alpha = 0
+//                                            print("CHANGEDDDDDDDDDD today back to 0000000000")
+//                                        })
+//                
+//                
+//            
+//        }
+//    }
     
     func load_image(urlString:String, cell: ReceptionTableViewCell)
     {
