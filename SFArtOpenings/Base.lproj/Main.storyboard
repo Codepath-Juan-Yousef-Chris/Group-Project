@@ -257,7 +257,7 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.98762309650000002" green="1" blue="0.99502727099999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="320" height="568"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -273,6 +273,7 @@
                         <outlet property="mapView" destination="ecN-BA-fyf" id="Zf4-Eq-oIk"/>
                         <outlet property="receptionTimeLabel" destination="jQG-k4-YbX" id="vel-0W-rBe"/>
                         <outlet property="scrollView" destination="DRX-36-clR" id="JI3-Dc-nJl"/>
+                        <outlet property="shareButton" destination="69a-Wq-9A3" id="si4-dU-lSL"/>
                         <outlet property="thumbDayView" destination="lB8-Ok-41e" id="hjr-rz-p3E"/>
                     </connections>
                 </viewController>

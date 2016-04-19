@@ -29,6 +29,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var thumbDayView: UIView!
     @IBOutlet weak var lineView: UIImageView!
+    @IBOutlet weak var shareButton: UIButton!
     
     
     
@@ -57,6 +58,8 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         let galleryImage1 = event!["galleryImage"] as? String
         //print (galleryImage!)
+        //galleryView.layer.cornerRadius = 5
+        //galleryView.clipsToBounds = true
         load_image(galleryImage1!)
         
         let galleryName = event!["galleryName"] as? String
@@ -89,6 +92,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
             self.galleryView.frame.size.height += 338
             self.galleryView.alpha = 1
         }
+        
+//        UIView.animateWithDuration(1) { () -> Void in
+//            self.thumbDayView.frame.size.height += 338
+            //self.thumbDayView.alpha = 1
+        //}
 
         UIView.animateWithDuration(1) { () -> Void in
             self.lowerView.frame.size.height -= 1438
@@ -112,6 +120,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.galleryLabelText.alpha = 0
         UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.galleryLabelText.alpha = 1
+            }, completion: nil)
+        
+        self.shareButton.alpha = 0
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.shareButton.alpha = 1
             }, completion: nil)
         
         self.receptionTimeLabel.alpha = 0
