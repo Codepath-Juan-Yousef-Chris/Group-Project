@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import MapKit
 import CoreLocation
+import Social
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
     
@@ -28,6 +29,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var thumbDayView: UIView!
     @IBOutlet weak var lineView: UIImageView!
+    @IBOutlet weak var shareButton: UIButton!
     
     
     
@@ -56,6 +58,8 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         let galleryImage1 = event!["galleryImage"] as? String
         //print (galleryImage!)
+        //galleryView.layer.cornerRadius = 5
+        //galleryView.clipsToBounds = true
         load_image(galleryImage1!)
         
         let galleryName = event!["galleryName"] as? String
@@ -88,6 +92,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
             self.galleryView.frame.size.height += 338
             self.galleryView.alpha = 1
         }
+        
+//        UIView.animateWithDuration(1) { () -> Void in
+//            self.thumbDayView.frame.size.height += 338
+            //self.thumbDayView.alpha = 1
+        //}
 
         UIView.animateWithDuration(1) { () -> Void in
             self.lowerView.frame.size.height -= 1438
@@ -111,6 +120,11 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         self.galleryLabelText.alpha = 0
         UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.galleryLabelText.alpha = 1
+            }, completion: nil)
+        
+        self.shareButton.alpha = 0
+        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.shareButton.alpha = 1
             }, completion: nil)
         
         self.receptionTimeLabel.alpha = 0
@@ -213,7 +227,87 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         UIApplication.sharedApplication().openURL(NSURL(string: appleMapsURL)!)
         
     }
+//code for facebook
+    @IBAction func onShare(sender: AnyObject) {
+        
+        
+        if self.receptionTimeLabel.isFirstResponder(){
+            self.receptionTimeLabel.resignFirstResponder()
+        }
+        
+        let alertCtrl = UIAlertController(title: "Social Share", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+        let tweetAction = UIAlertAction(title: "Twitter", style: .Default, handler:{
+            _ in
+            
+            // If user has signed on Twitter
+            if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter){
+                let twitterVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+                if self.receptionTimeLabel.text!.characters.count < 140 {
+                    twitterVC.setInitialText(self.receptionTimeLabel.text)
+                }else{
+                    twitterVC.setInitialText(self.receptionTimeLabel.text!.substringToIndex(self.receptionTimeLabel.text!.startIndex.advancedBy(140)))
+                }
+                
+                self.presentViewController(twitterVC, animated: true, completion: nil)
+            }else{
+                self.showAlertMessage("Please Sign In Twitter Before You Tweet!")
+            }
+            
+            
+        })
+        
+        let facebookAction = UIAlertAction(title: "Facebook", style: .Default, handler: {
+            _ in
+            
+            let facebookVC = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
+            // If user has signed on Facebook
+            if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
+                facebookVC.setInitialText(self.receptionTimeLabel.text)
+                
+                self.presentViewController(facebookVC, animated: true, completion: nil)
+            }else{
+                self.showAlertMessage("Please Sign In to Facebook")
+            }
+            
+        })
+        
+        let moreAction = UIAlertAction(title: "More", style: .Default, handler: {
+            _ in
+            
+            let activityCtrl = UIActivityViewController(activityItems: [self.receptionTimeLabel.text!], applicationActivities: nil)
+            self.presentViewController(activityCtrl, animated: true, completion: nil)
+            
+        })
+        
+        
+        alertCtrl.addAction(cancelAction)
+        alertCtrl.addAction(tweetAction)
+        alertCtrl.addAction(facebookAction)
+        alertCtrl.addAction(moreAction)
+        self.presentViewController(alertCtrl, animated: true, completion: nil)
+    }
+    
+//    func configureTweetTextView(){
+//        self.receptionDateLabel.layer.backgroundColor = UIColor(red: 1, green: 1, blue: 0.9, alpha: 1).CGColor
+//        
+//        self.receptionDateLabel.layer.cornerRadius = 10.0
+//        self.receptionDateLabel.layer.borderColor = UIColor.blackColor().CGColor
+//        self.receptionDateLabel.layer.borderWidth = 2.0
+//        
+//    }
+    
+    func showAlertMessage(message: String){
+        let alertCtrl = UIAlertController(title: "Tweet Share", message: message, preferredStyle: .Alert)
+        let alertAction = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        alertCtrl.addAction(alertAction)
+        self.presentViewController(alertCtrl, animated: true, completion: nil)
+        
+    }
 
+//code for share
+    
+    
     /*
     // MARK: - Navigation
 
