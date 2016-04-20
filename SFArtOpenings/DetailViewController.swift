@@ -263,7 +263,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
             let facebookVC = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
             // If user has signed on Facebook
             if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook){
-                facebookVC.setInitialText(self.receptionTimeLabel.text)
+                facebookVC.setInitialText("Hey guys! I'm gonna be at the "+self.exhibitionNameLabel.text!+" art opening from "+self.receptionTimeLabel.text!+". Anyone wanna join me?")
                 
                 self.presentViewController(facebookVC, animated: true, completion: nil)
             }else{
