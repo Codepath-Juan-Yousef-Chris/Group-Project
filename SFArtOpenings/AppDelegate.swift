@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let todayViewController = todayNavigationController.topViewController as! MainViewController
         todayViewController.parseClass = "Today"
         todayNavigationController.tabBarItem.title = "Today"
-        todayNavigationController.tabBarItem.image = UIImage(named: "temp1")
+        todayNavigationController.tabBarItem.image = UIImage(named: "champagne")
         //todayNavigationController.tabBarItem.selectedImage = UIImage(named: "temp1")
         
         
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let upcomingViewController = upcomingNavigationController.topViewController as! MainViewController
         upcomingViewController.parseClass = "Upcoming"
         upcomingNavigationController.tabBarItem.title = "Upcoming"
-        upcomingNavigationController.tabBarItem.image = UIImage(named: "temp2")
+        upcomingNavigationController.tabBarItem.image = UIImage(named: "calendar")
         //upcomingNavigationController.tabBarItem.selectedImage = UIImage(named: "temp1")
         
         let tabBarController = UITabBarController()
