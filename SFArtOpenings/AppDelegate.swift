@@ -42,15 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController.viewControllers = [todayNavigationController, upcomingNavigationController]
         
         UITabBar.appearance().tintColor = UIColor(
-            red: 0xc0/255,
-            green: 0x29/255,
-            blue: 0x42/255,
+            red: 0xd9/255,
+            green: 0x5b/255,
+            blue: 0x43/255,
             alpha: 1.0)
         
         UITabBar.appearance().barTintColor = UIColor(
-            red: 0xec/255,
-            green: 0xd0/255,
-            blue: 0x78/255,
+            red: 0xff/255,
+            green: 0xff/255,
+            blue: 0xff/255,
             alpha: 0.5)
 
         window?.rootViewController = tabBarController

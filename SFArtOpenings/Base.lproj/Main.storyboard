@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0oe-fs-0x6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0oe-fs-0x6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -29,62 +29,53 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April 28th 2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrB-7s-TXn">
-                                                    <rect key="frame" x="142" y="68" width="118" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                    <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LQU-6q-eYH">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
                                                 </imageView>
-                                                <view alpha="0.90000000000000002" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-xd-W6M">
-                                                    <rect key="frame" x="0.0" y="119" width="320" height="72"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-2t-kv4">
-                                                            <rect key="frame" x="71" y="5" width="241" height="22"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-iW-JIC">
-                                                            <rect key="frame" x="71" y="47" width="142" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="685 Market St., San Francisco, CA 94118" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-kp-pad">
-                                                            <rect key="frame" x="72" y="25" width="240" height="14"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-Bc-87H">
-                                                            <rect key="frame" x="268" y="40" width="34" height="31"/>
-                                                            <state key="normal" title="Ride" image="getride"/>
-                                                            <connections>
-                                                                <action selector="getRide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B31-IL-P1b"/>
-                                                            </connections>
-                                                        </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4R-9l-mbL">
-                                                            <rect key="frame" x="20" y="8" width="35" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                            <color key="textColor" white="1" alpha="0.62" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKE-ti-SqI">
-                                                            <rect key="frame" x="26" y="35" width="23" height="23"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cp6-xd-W6M">
+                                                    <rect key="frame" x="0.0" y="15" width="320" height="184.5"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EYc-vd-dWu">
                                                     <rect key="frame" x="0.0" y="190" width="320" height="128"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcF-2t-kv4">
+                                                    <rect key="frame" x="71" y="112" width="241" height="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="685 Market St., San Francisco, CA 94118" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-kp-pad">
+                                                    <rect key="frame" x="72" y="141" width="240" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-iW-JIC">
+                                                    <rect key="frame" x="72" y="162" width="142" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="April" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4R-9l-mbL">
+                                                    <rect key="frame" x="20" y="124" width="35" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKE-ti-SqI">
+                                                    <rect key="frame" x="24" y="147" width="23" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-Bc-87H">
+                                                    <rect key="frame" x="268" y="157" width="34" height="31"/>
+                                                    <state key="normal" title="Ride" image="getride"/>
+                                                    <connections>
+                                                        <action selector="getRide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B31-IL-P1b"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="ReceptionCell"/>
@@ -92,7 +83,7 @@
                                             <outlet property="galleryAddressLabel" destination="n3p-kp-pad" id="pse-6T-ijh"/>
                                             <outlet property="galleryImageView" destination="LQU-6q-eYH" id="TxF-Td-KBT"/>
                                             <outlet property="galleryNameLabel" destination="rcF-2t-kv4" id="ADa-z5-KOf"/>
-                                            <outlet property="startDateLabel" destination="hrB-7s-TXn" id="W56-ju-0Fu"/>
+                                            <outlet property="gradientView" destination="Cp6-xd-W6M" id="32B-1y-7Na"/>
                                             <outlet property="startTimeLabel" destination="wGq-iW-JIC" id="My5-AY-4D2"/>
                                             <segue destination="NPj-Uz-BiP" kind="show" identifier="detailsSegue" id="CG1-qu-l9Y"/>
                                         </connections>
@@ -105,7 +96,7 @@
                     <navigationItem key="navigationItem" id="gfn-U1-7Wy">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" image="settingssmall" id="92q-UD-Jfu">
-                            <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="NoG-Xb-ewf" kind="push" id="6Sb-9N-EOD"/>
                             </connections>
@@ -114,14 +105,14 @@
                             <rect key="frame" x="141" y="7" width="38" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Login">
-                                <color key="titleColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <segue destination="6nb-Gz-R1w" kind="presentation" identifier="loginSegue" id="yTN-DY-EzL"/>
                             </connections>
                         </button>
                         <barButtonItem key="rightBarButtonItem" image="chatsmall" id="AD0-ux-0hg">
-                            <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="jUp-10-iO4" kind="popoverPresentation" popoverAnchorBarButtonItem="AD0-ux-0hg" id="cYx-8c-n0A">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -137,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="335"/>
+            <point key="canvasLocation" x="1209" y="327"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ig8-mb-rP4">
@@ -180,13 +171,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-i4-1fy">
                                         <rect key="frame" x="19" y="8" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
-                                        <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="28" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1tt-GV-pef">
                                         <rect key="frame" x="13" y="27" width="59" height="50"/>
                                         <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="43"/>
-                                        <color key="textColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -195,38 +186,38 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRX-36-clR">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <view alpha="0.91000000000000003" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1z-yt-R2A" userLabel="Lower View">
+                                    <view alpha="0.97999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G1z-yt-R2A" userLabel="Lower View">
                                         <rect key="frame" x="0.0" y="338" width="320" height="1100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjE-2a-zt4">
                                                 <rect key="frame" x="8" y="6" width="304" height="55"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modernism Gallery" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PhB-WR-xBQ">
                                                 <rect key="frame" x="20" y="99" width="304" height="21"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="20"/>
-                                                <color key="textColor" white="1" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-TN-snN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artists" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIy-TN-snN">
                                                 <rect key="frame" x="20" y="157" width="280" height="49"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
-                                                <color key="textColor" white="1" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exhibition Description" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcl-RW-PzS">
                                                 <rect key="frame" x="20" y="214" width="292" height="416"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1275 Minnesota Street, San Francisco" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZE4-YQ-wSb">
                                                 <rect key="frame" x="8" y="814" width="304" height="56"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ecN-BA-fyf">
@@ -241,7 +232,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:30pm - 8pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQG-k4-YbX">
                                                 <rect key="frame" x="20" y="127" width="180" height="20"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69a-Wq-9A3">
@@ -252,7 +243,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                             </scrollView>
@@ -290,8 +281,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oUr-H0-Mu5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.75294117650000003" green="0.16078431369999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.92549019610000005" green="0.81568627449999997" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -543,6 +534,6 @@
         <image name="share4" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9sz-Dn-FAz"/>
+        <segue reference="yTN-DY-EzL"/>
     </inferredMetricsTieBreakers>
 </document>
