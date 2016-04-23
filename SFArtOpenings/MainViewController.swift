@@ -29,6 +29,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var parseClass: String!
     
+    
     override func loadView() {
         super.loadView()
        
@@ -49,6 +50,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         
         //User Persistence)"
@@ -74,6 +77,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewWillAppear(animated: Bool) {
         parseAPICall()
             }
+    
     
 //    override func viewDidAppear(animated: Bool) {
 //        tabColor0()
