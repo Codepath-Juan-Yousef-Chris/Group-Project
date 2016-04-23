@@ -14,9 +14,11 @@
         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="574-mf-rQh" userLabel="AlertView">
             <rect key="frame" x="0.0" y="0.0" width="300" height="364"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiQ-AP-QuH">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AiQ-AP-QuH">
                     <rect key="frame" x="20" y="314" width="260" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
                     <state key="normal" title="Take me back!">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -26,26 +28,27 @@
                 <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wvo-Lw-v8L" userLabel="DividerView">
                     <rect key="frame" x="24" y="62" width="253" height="1"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="tintColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="fow-AZ-flo"/>
                     </constraints>
                 </view>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Get a Ride" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKC-02-gE7">
-                    <rect key="frame" x="110" y="25" width="80" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.98762309650000002" green="1" blue="0.99502727099999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZ9-4d-VRT">
                     <rect key="frame" x="71" y="118" width="158" height="43"/>
                     <state key="normal" title="Uber" image="uber"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNw-XL-7GV">
-                    <rect key="frame" x="86" y="197" width="129" height="69"/>
+                    <rect key="frame" x="86" y="197" width="129" height="77"/>
                     <state key="normal" title="Lyft" image="lyft"/>
                 </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Get a Ride" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKC-02-gE7">
+                    <rect key="frame" x="104" y="24" width="93" height="23"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <color key="tintColor" red="0.98762309650000002" green="1" blue="0.99502727099999999" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="Wvo-Lw-v8L" secondAttribute="trailing" constant="20" id="1bL-63-F41"/>

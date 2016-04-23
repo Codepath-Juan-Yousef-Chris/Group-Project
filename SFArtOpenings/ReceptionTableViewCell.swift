@@ -46,7 +46,7 @@ class ReceptionTableViewCell: UITableViewCell {
             red: 0xd9/255,
             green: 0x5b/255,
             blue: 0x43/255,
-            alpha: 1).CGColor as CGColorRef
+            alpha: 0.9).CGColor as CGColorRef
         
         //        let color4 = UIColor(
         //            red: 0xFF/255,
