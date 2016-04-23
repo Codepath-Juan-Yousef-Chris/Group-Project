@@ -91,7 +91,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let galleryName = reception["galleryName"] as! String
         let galleryAddress = reception["galleryAddress"] as! String
         let receptionTime = reception["receptionTime"] as! String
-        let receptionDate = reception["receptionDate"] as! String
+        //let receptionDate = reception["receptionDate"] as! String
         let galleryImage = reception["galleryImage"] as? String
         
         if let galleryImage = galleryImage {
@@ -103,7 +103,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.galleryAddressLabel.text = galleryAddress
         cell.galleryAddressLabel.sizeToFit()
         cell.startTimeLabel.text = receptionTime
-        cell.startDateLabel.text = receptionDate
+        //cell.startDateLabel.text = receptionDate
         
 
         

@@ -86,59 +86,139 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         exhibitionNameLabel.text = exhibitionName
         exhibitionNameLabel.sizeToFit()
         
-        // Animating the picture and text
-        
-        UIView.animateWithDuration(1) { () -> Void in
-            self.galleryView.frame.size.height += 338
-            self.galleryView.alpha = 1
-        }
+        // Animating the picture
         
 //        UIView.animateWithDuration(1) { () -> Void in
-//            self.thumbDayView.frame.size.height += 338
-            //self.thumbDayView.alpha = 1
-        //}
+//            self.galleryView.frame.size.height += 338
+//            self.galleryView.alpha = 1
+//        }
+        
+        //TRYING ANIMATION WITH DAMPING
+        UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+            self.galleryView.frame.size.height += 338
+            self.galleryView.alpha = 1
+        }) { (Bool) -> Void in }
 
-        UIView.animateWithDuration(1) { () -> Void in
+//            completion: { (Bool) -> Void in }
+        
+        
+        
+//        UIView.animateWithDuration(4) { () -> Void in
+//            self.thumbDayView.frame.size.height += 338
+//            self.thumbDayView.alpha = 1
+//        }
+
+        
+        //Animating the lower view
+//        UIView.animateWithDuration(1) { () -> Void in
+//            self.lowerView.frame.size.height -= 1438
+//        }
+        
+        //TRYING ANIMATION OF LOWER VIEW WITH DAMPING
+        UIView.animateWithDuration(2, delay: 1, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.lowerView.frame.size.height -= 1438
-        }
+//           self.lowerView.alpha = 1
+        }) { (Bool) -> Void in }
+        
+        
         
 //        self.galleryView.alpha = 0
 //        UIView.animateWithDuration(0.8, delay: 0.2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
 //            self.galleryView.alpha = 1
 //            }, completion: nil)
+//
+        
+        
+        //ANIMATING THE TEXT IN LOWER VIEW
+        
+//        self.exhibitionNameLabel.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.exhibitionNameLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.lineView.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.lineView.alpha = 1
+//            }, completion: nil)
+//        
+//        self.galleryLabelText.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.galleryLabelText.alpha = 1
+//            }, completion: nil)
+//        
+//        self.shareButton.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.shareButton.alpha = 1
+//            }, completion: nil)
+//        
+//        self.receptionTimeLabel.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.receptionTimeLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.artistsLabel.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.artistsLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.exhibitionDescriptionLabel.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.exhibitionDescriptionLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.galleryAdressLabel.alpha = 0
+//        UIView.animateWithDuration(2.3, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.galleryAdressLabel.alpha = 1
+//            }, completion: nil)
+        
+        
+        //SUDDEN ANIMATION OF TEXT TO GO WITH DAMPING
         
         self.exhibitionNameLabel.alpha = 0
-        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.exhibitionNameLabel.alpha = 1
             }, completion: nil)
         
         self.lineView.alpha = 0
-        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.lineView.alpha = 1
             }, completion: nil)
         
         self.galleryLabelText.alpha = 0
-        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.galleryLabelText.alpha = 1
             }, completion: nil)
         
         self.shareButton.alpha = 0
-        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.shareButton.alpha = 1
             }, completion: nil)
         
         self.receptionTimeLabel.alpha = 0
-        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.receptionTimeLabel.alpha = 1
             }, completion: nil)
         
         self.artistsLabel.alpha = 0
-        UIView.animateWithDuration(2.3, delay: 0.8, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
             self.artistsLabel.alpha = 1
+            }, completion: nil)
+        
+        self.exhibitionDescriptionLabel.alpha = 0
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.exhibitionDescriptionLabel.alpha = 1
+            }, completion: nil)
+        
+        self.galleryAdressLabel.alpha = 0
+        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+            self.galleryAdressLabel.alpha = 1
             }, completion: nil)
         
         
         
+        
+        
+        //ALTERNATIVE ANIMATION OF TEXT
         
 //        self.exhibitionNameLabel.alpha = 0
 //        UIView.animateWithDuration(1.8, delay: 0.3, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
@@ -167,15 +247,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 //            self.receptionDateLabel.alpha = 1
 //            }, completion: nil)
         
-        self.exhibitionDescriptionLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.exhibitionDescriptionLabel.alpha = 1
-            }, completion: nil)
-        
-        self.galleryAdressLabel.alpha = 0
-        UIView.animateWithDuration(1.8, delay: 1.5, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.galleryAdressLabel.alpha = 1
-            }, completion: nil)
+       
         
         //print(event)
 
