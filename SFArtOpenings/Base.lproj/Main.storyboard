@@ -95,7 +95,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gfn-U1-7Wy">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="settingssmall" id="92q-UD-Jfu">
+                        <barButtonItem key="leftBarButtonItem" image="MenuSettings-128" id="92q-UD-Jfu">
                             <color key="tintColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="NoG-Xb-ewf" kind="push" id="6Sb-9N-EOD"/>
@@ -527,10 +527,10 @@
     <resources>
         <image name="B_In-1" width="170" height="59"/>
         <image name="B_Up" width="170" height="59"/>
+        <image name="MenuSettings-128" width="30" height="30"/>
         <image name="chatsmall" width="30" height="30"/>
         <image name="getride" width="128" height="128"/>
         <image name="line2" width="300" height="31"/>
-        <image name="settingssmall" width="30" height="30"/>
         <image name="share4" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
