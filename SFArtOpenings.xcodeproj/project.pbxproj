@@ -22,6 +22,11 @@
 		546168771C9F7C9A00DC6D0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546168761C9F7C9A00DC6D0D /* LoginViewController.swift */; };
 		546168791C9F867E00DC6D0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546168781C9F867E00DC6D0D /* User.swift */; };
 		5461687B1C9F969300DC6D0D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5461687A1C9F969300DC6D0D /* ChatViewController.swift */; };
+		546D67541CCB35ED00E0EDD8 /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D674F1CCB35ED00E0EDD8 /* DGElasticPullToRefreshConstants.swift */; };
+		546D67551CCB35ED00E0EDD8 /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D67501CCB35ED00E0EDD8 /* DGElasticPullToRefreshExtensions.swift */; };
+		546D67561CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D67511CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingView.swift */; };
+		546D67571CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D67521CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
+		546D67581CCB35ED00E0EDD8 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546D67531CCB35ED00E0EDD8 /* DGElasticPullToRefreshView.swift */; };
 		6A07240C1CA0A79500278720 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A07240B1CA0A79500278720 /* ChatTableViewCell.swift */; };
 		6AEAC5DD1C800D9C0018063A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEAC5DC1C800D9C0018063A /* AppDelegate.swift */; };
 		6AEAC5E21C800D9C0018063A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AEAC5E01C800D9C0018063A /* Main.storyboard */; };
@@ -46,6 +51,11 @@
 		546168761C9F7C9A00DC6D0D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		546168781C9F867E00DC6D0D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5461687A1C9F969300DC6D0D /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		546D674F1CCB35ED00E0EDD8 /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DGElasticPullToRefreshConstants.swift; path = "../../../DGElasticPullToRefresh-master/DGElasticPullToRefresh/DGElasticPullToRefreshConstants.swift"; sourceTree = "<group>"; };
+		546D67501CCB35ED00E0EDD8 /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DGElasticPullToRefreshExtensions.swift; path = "../../../DGElasticPullToRefresh-master/DGElasticPullToRefresh/DGElasticPullToRefreshExtensions.swift"; sourceTree = "<group>"; };
+		546D67511CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DGElasticPullToRefreshLoadingView.swift; path = "../../../DGElasticPullToRefresh-master/DGElasticPullToRefresh/DGElasticPullToRefreshLoadingView.swift"; sourceTree = "<group>"; };
+		546D67521CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DGElasticPullToRefreshLoadingViewCircle.swift; path = "../../../DGElasticPullToRefresh-master/DGElasticPullToRefresh/DGElasticPullToRefreshLoadingViewCircle.swift"; sourceTree = "<group>"; };
+		546D67531CCB35ED00E0EDD8 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DGElasticPullToRefreshView.swift; path = "../../../DGElasticPullToRefresh-master/DGElasticPullToRefresh/DGElasticPullToRefreshView.swift"; sourceTree = "<group>"; };
 		6A07240B1CA0A79500278720 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		6AEAC5D91C800D9C0018063A /* SFArtOpenings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFArtOpenings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AEAC5DC1C800D9C0018063A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +127,18 @@
 			name = models;
 			sourceTree = "<group>";
 		};
+		546D674E1CCB35A700E0EDD8 /* Pull to Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				546D674F1CCB35ED00E0EDD8 /* DGElasticPullToRefreshConstants.swift */,
+				546D67501CCB35ED00E0EDD8 /* DGElasticPullToRefreshExtensions.swift */,
+				546D67511CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingView.swift */,
+				546D67521CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingViewCircle.swift */,
+				546D67531CCB35ED00E0EDD8 /* DGElasticPullToRefreshView.swift */,
+			);
+			name = "Pull to Refresh";
+			sourceTree = "<group>";
+		};
 		6AEAC5D01C800D9C0018063A = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +160,7 @@
 		6AEAC5DB1C800D9C0018063A /* SFArtOpenings */ = {
 			isa = PBXGroup;
 			children = (
+				546D674E1CCB35A700E0EDD8 /* Pull to Refresh */,
 				541CD63F1CC3158600040CC0 /* cells */,
 				542504021C91550B0092AE3B /* models */,
 				542504011C9154FB0092AE3B /* View Controllers */,
@@ -288,12 +311,17 @@
 				542504041C9156170092AE3B /* ReceptionTableViewCell.swift in Sources */,
 				5461687B1C9F969300DC6D0D /* ChatViewController.swift in Sources */,
 				541CD6381CC2E1D400040CC0 /* RideViewController.swift in Sources */,
+				546D67551CCB35ED00E0EDD8 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				6A07240C1CA0A79500278720 /* ChatTableViewCell.swift in Sources */,
 				546168751C9E1EBD00DC6D0D /* Upcoming.swift in Sources */,
+				546D67541CCB35ED00E0EDD8 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				542504001C9154EA0092AE3B /* MainViewController.swift in Sources */,
 				6AEAC5DD1C800D9C0018063A /* AppDelegate.swift in Sources */,
+				546D67561CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				54046E801CA2A017002AF7DE /* DetailViewController.swift in Sources */,
 				546168731C9E1EB100DC6D0D /* Today.swift in Sources */,
+				546D67571CCB35ED00E0EDD8 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				546D67581CCB35ED00E0EDD8 /* DGElasticPullToRefreshView.swift in Sources */,
 				541CD6431CC315CE00040CC0 /* SettingsViewController.swift in Sources */,
 				541CD63E1CC3006900040CC0 /* RideTransition.swift in Sources */,
 				546168791C9F867E00DC6D0D /* User.swift in Sources */,

@@ -29,8 +29,29 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var parseClass: String!
     
+    
+    override func loadView() {
+        super.loadView()
+       
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor(red: 0xff/255.0, green: 0xff/255.0, blue: 0xff/255.0, alpha: 1.0)
+        tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1.5 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
+                self?.tableView.dg_stopLoading()
+            })
+            }, loadingView: loadingView)
+        tableView.dg_setPullToRefreshFillColor(UIColor(red: 0xd9/255,green: 0x5b/255,blue: 0x43/255, alpha: 1.0))
+        tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         
         //User Persistence)"
@@ -39,11 +60,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         usernameBarButton.setTitle(user?.username, forState: UIControlState.Normal)
         
         
-        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
-        tableView.addSubview(refreshControl)
+//        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
+//        tableView.addSubview(refreshControl)
         
-        tableView.dataSource = self
-        tableView.delegate = self
 
 
 
@@ -58,6 +77,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewWillAppear(animated: Bool) {
         parseAPICall()
             }
+    
     
 //    override func viewDidAppear(animated: Bool) {
 //        tabColor0()
@@ -103,6 +123,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.galleryAddressLabel.text = galleryAddress
         cell.galleryAddressLabel.sizeToFit()
         cell.startTimeLabel.text = receptionTime
+        cell.galleryAddressLabel.sizeToFit()
         //cell.startDateLabel.text = receptionDate
         
 
@@ -114,28 +135,28 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
 }
     
-    func refreshControlAction(refreshControl: UIRefreshControl) {
-        let session = NSURLSession(
-            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
-            delegate:nil,
-            delegateQueue:NSOperationQueue.mainQueue()
-        )
-        let request = NSURLRequest()
-        let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
-            completionHandler: { (data, response, error) in
-                
-                // ... Use the new data to update the data source ...
-                
-                // Reload the tableView now that there is new data
-                self.tableView.reloadData()
-                print("reloading")
-                
-                // Tell the refreshControl to stop spinning
-                refreshControl.endRefreshing()
-        });
-        task.resume()
-        
-    }
+//    func refreshControlAction(refreshControl: UIRefreshControl) {
+//        let session = NSURLSession(
+//            configuration: NSURLSessionConfiguration.defaultSessionConfiguration(),
+//            delegate:nil,
+//            delegateQueue:NSOperationQueue.mainQueue()
+//        )
+//        let request = NSURLRequest()
+//        let task : NSURLSessionDataTask = session.dataTaskWithRequest(request,
+//            completionHandler: { (data, response, error) in
+//                
+//                // ... Use the new data to update the data source ...
+//                
+//                // Reload the tableView now that there is new data
+//                self.tableView.reloadData()
+//                print("reloading")
+//                
+//                // Tell the refreshControl to stop spinning
+//                refreshControl.endRefreshing()
+//        });
+//        task.resume()
+//        
+//    }
     
     func parseAPICall() {
         // construct PFQuery
