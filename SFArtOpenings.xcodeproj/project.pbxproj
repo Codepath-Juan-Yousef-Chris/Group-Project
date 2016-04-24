@@ -106,9 +106,9 @@
 		542504011C9154FB0092AE3B /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				54046E7F1CA2A017002AF7DE /* DetailViewController.swift */,
 				542503FF1C9154EA0092AE3B /* MainViewController.swift */,
 				541CD6421CC315CE00040CC0 /* SettingsViewController.swift */,
-				54046E7F1CA2A017002AF7DE /* DetailViewController.swift */,
 				546168761C9F7C9A00DC6D0D /* LoginViewController.swift */,
 				5461687A1C9F969300DC6D0D /* ChatViewController.swift */,
 				541CD6371CC2E1D400040CC0 /* RideViewController.swift */,
