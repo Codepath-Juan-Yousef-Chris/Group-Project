@@ -57,7 +57,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         //User Persistence)"
         let user = PFUser.currentUser()
         //print ("current user here it is: \(user?.username)")
-        usernameBarButton.setTitle(user?.username, forState: UIControlState.Normal)
+        if user == nil{
+            usernameBarButton.setTitle("Log in", forState: UIControlState.Normal)
+        }else{
+            usernameBarButton.setTitle(user?.username, forState: UIControlState.Normal)
+        }
+
         
         
 //        refreshControl.addTarget(self, action: "refreshControlAction:", forControlEvents: UIControlEvents.ValueChanged)
