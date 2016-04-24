@@ -31,6 +31,8 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var lineView: UIImageView!
     @IBOutlet weak var shareButton: UIButton!
     
+    @IBOutlet var openingMonthLabel: UILabel!
+    @IBOutlet var openingDateLabel: UILabel!
     
     
     enum ErrorHandling:ErrorType{
@@ -86,6 +88,12 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         exhibitionNameLabel.text = exhibitionName
         exhibitionNameLabel.sizeToFit()
         
+        let openingDate = event!["openingDate"] as? String
+        openingDateLabel.text = openingDate
+        
+        let openingMonth = event!["openingMonth"] as? String
+        openingMonthLabel.text = openingMonth
+        
         // Animating the picture
         
 //        UIView.animateWithDuration(1) { () -> Void in
@@ -93,11 +101,17 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 //            self.galleryView.alpha = 1
 //        }
         
-        //TRYING ANIMATION WITH DAMPING
-        UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(1.1, delay: 0, usingSpringWithDamping: 12, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.galleryView.frame.size.height += 338
             self.galleryView.alpha = 1
         }) { (Bool) -> Void in }
+
+        
+//        //TRYING ANIMATION WITH DAMPING
+//        UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+//            self.galleryView.frame.size.height += 338
+//            self.galleryView.alpha = 1
+//        }) { (Bool) -> Void in }
 
 //            completion: { (Bool) -> Void in }
         

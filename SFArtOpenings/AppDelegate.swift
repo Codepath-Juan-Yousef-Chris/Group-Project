@@ -51,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             red: 0xff/255,
             green: 0xff/255,
             blue: 0xff/255,
-            alpha: 0.5)
+            alpha: 1)
 
         window?.rootViewController = tabBarController
         window?.makeKeyAndVisible()

@@ -27,6 +27,10 @@ class ReceptionTableViewCell: UITableViewCell {
     @IBOutlet weak var gradientView: UIView!
     let gradientLayer = CAGradientLayer()
     
+    @IBOutlet var openingMonthLabel: UILabel!
+    
+    @IBOutlet var openingDateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

@@ -116,8 +116,12 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let galleryName = reception["galleryName"] as! String
         let galleryAddress = reception["galleryAddress"] as! String
         let receptionTime = reception["receptionTime"] as! String
+        let openingMonth = reception["openingMonth"] as! String
+        let openingDate = reception["openingDate"] as! String
+        
         //let receptionDate = reception["receptionDate"] as! String
         let galleryImage = reception["galleryImage"] as? String
+        
         
         if let galleryImage = galleryImage {
             load_image(galleryImage, cell: cell)
@@ -130,6 +134,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.startTimeLabel.text = receptionTime
         cell.galleryAddressLabel.sizeToFit()
         //cell.startDateLabel.text = receptionDate
+        cell.openingMonthLabel.text = openingMonth
+        cell.openingDateLabel.text = openingDate
         
 
         
