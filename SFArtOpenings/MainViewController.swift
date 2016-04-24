@@ -145,6 +145,21 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
         return cell
 }
+
+    // ANIMATING TABLE VIEW CELLS
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+      
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animateWithDuration(0.7, animations: { () -> Void in
+           cell.layer.transform = CATransform3DIdentity
+        })
+    }
+    
+    
     
 //    func refreshControlAction(refreshControl: UIRefreshControl) {
 //        let session = NSURLSession(
