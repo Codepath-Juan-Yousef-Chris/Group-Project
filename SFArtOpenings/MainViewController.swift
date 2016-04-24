@@ -173,7 +173,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 self.tableView.reloadData()
             } else {
                 //                // handle error
-                print ("Error")
+                print (error)
                 
             }
             
