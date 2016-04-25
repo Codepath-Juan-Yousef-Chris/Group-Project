@@ -154,7 +154,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
         cell.layer.transform = rotationTransform
         
-        UIView.animateWithDuration(0.7, animations: { () -> Void in
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
            cell.layer.transform = CATransform3DIdentity
         })
     }
