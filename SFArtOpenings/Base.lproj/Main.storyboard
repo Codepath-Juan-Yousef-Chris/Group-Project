@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0oe-fs-0x6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0oe-fs-0x6">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -39,9 +39,9 @@
                                                     <rect key="frame" x="0.0" y="190" width="320" height="128"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-Bc-87H">
-                                                    <rect key="frame" x="272" y="155" width="34" height="31"/>
-                                                    <state key="normal" title="Ride" image="getride"/>
+                                                <button opaque="NO" alpha="0.77000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-Bc-87H">
+                                                    <rect key="frame" x="264" y="155" width="48" height="31"/>
+                                                    <state key="normal" title="Ride" image="Car2"/>
                                                     <connections>
                                                         <action selector="getRide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B31-IL-P1b"/>
                                                     </connections>
@@ -97,7 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="gfn-U1-7Wy">
                         <nil key="title"/>
-                        <barButtonItem key="leftBarButtonItem" image="MenuSettings-128" id="92q-UD-Jfu">
+                        <barButtonItem key="leftBarButtonItem" image="settingssmall" id="92q-UD-Jfu">
                             <color key="tintColor" red="0.85098039215686272" green="0.35686274509803922" blue="0.2627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="NoG-Xb-ewf" kind="push" id="6Sb-9N-EOD"/>
@@ -323,11 +323,35 @@
                                     <action selector="onLogout:" destination="NoG-Xb-ewf" eventType="touchUpInside" id="ZRy-Ow-lql"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgp-bs-5ve">
+                                <rect key="frame" x="113" y="290" width="94" height="30"/>
+                                <state key="normal" title="Change Color">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRandom:" destination="NoG-Xb-ewf" eventType="touchUpInside" id="Pxj-g4-s5d"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M71-av-zeV">
+                                <rect key="frame" x="48" y="355" width="225" height="29"/>
+                                <segments>
+                                    <segment title="Orange"/>
+                                    <segment title="Green"/>
+                                    <segment title="Red"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segControlColorChange:" destination="NoG-Xb-ewf" eventType="valueChanged" id="lJU-Kh-Kvc"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="0.3294117647" green="0.14117647059999999" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.35686274509999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="sPT-gv-57o"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="colorControl" destination="M71-av-zeV" id="2a2-wp-t12"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPY-fE-tUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -525,11 +549,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MenuSettings-128" width="30" height="30"/>
+        <image name="Car2" width="181" height="128"/>
         <image name="art" width="1024" height="682"/>
         <image name="chatsmall" width="30" height="30"/>
-        <image name="getride" width="128" height="128"/>
         <image name="line2" width="300" height="31"/>
+        <image name="settingssmall" width="30" height="30"/>
         <image name="share4" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
