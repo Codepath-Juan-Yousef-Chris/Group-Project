@@ -34,40 +34,85 @@ class ReceptionTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        //Gradient code
-        // 1
-        self.gradientView.backgroundColor = UIColor.clearColor()
+//        //Gradient code
+//        // 1
+//        self.gradientView.backgroundColor = UIColor.clearColor()
+//        
+//        // 2
+//        gradientLayer.frame = self.gradientView.bounds
+//        
+//        // 3
+//        let color1 = UIColor.clearColor().CGColor as CGColorRef
+//        
+//        //        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 1.0).CGColor as CGColorRef
+//        
+//        let color4 = UIColor(
+//            red: 0xd9/255,
+//            green: 0x5b/255,
+//            blue: 0x43/255,
+//            alpha: 0.9).CGColor as CGColorRef
+//        
+//        //        let color4 = UIColor(
+//        //            red: 0xFF/255,
+//        //            green: 0xFF/255,
+//        //            blue: 0xFF/255,
+//        //            alpha: 1).CGColor as CGColorRef
+//        
+//        gradientLayer.colors = [color1, color4]
+//        
+//        // 4
+//        gradientLayer.locations = [0, 1]
+//        
+//        // 5
+//        self.gradientView.layer.addSublayer(gradientLayer)
         
-        // 2
-        gradientLayer.frame = self.gradientView.bounds
         
-        // 3
-        let color1 = UIColor.clearColor().CGColor as CGColorRef
+         //Initialization code
         
-        //        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 1.0).CGColor as CGColorRef
         
-        let color4 = UIColor(
-            red: 0xd9/255,
-            green: 0x5b/255,
-            blue: 0x43/255,
-            alpha: 0.9).CGColor as CGColorRef
+                //GRADIENT CODE
+                // 1
+                self.gradientView.backgroundColor = UIColor.clearColor()
         
-        //        let color4 = UIColor(
-        //            red: 0xFF/255,
-        //            green: 0xFF/255,
-        //            blue: 0xFF/255,
-        //            alpha: 1).CGColor as CGColorRef
+                // 2
+                gradientLayer.frame = self.gradientView.bounds
         
-        gradientLayer.colors = [color1, color4]
+                // 3
+                let color1 = UIColor.clearColor().CGColor as CGColorRef
         
-        // 4
-        gradientLayer.locations = [0, 1]
+                let color2 = UIColor.clearColor().CGColor as CGColorRef
         
-        // 5
-        self.gradientView.layer.addSublayer(gradientLayer)
+                let color3 = UIColor(
+                    red: 0x11/255,
+                    green: 0x11/255,
+                    blue: 0x11/255,
+                    alpha: 0.7).CGColor as CGColorRef
         
+        
+        
+                let color4 = UIColor(
+                    red: 0x11/255,
+                    green: 0x11/255,
+                    blue: 0x11/255,
+                    alpha: 0.8).CGColor as CGColorRef
+        
+                //        let color4 = UIColor(
+                //            red: 0xFF/255,
+                //            green: 0xFF/255,
+                //            blue: 0xFF/255,
+                //            alpha: 1).CGColor as CGColorRef
+        
+                gradientLayer.colors = [color1, color2, color3, color4]
+                
+                // 4
+                gradientLayer.locations = [0.2, 0.5, 0.9, 1]
+                
+                // 5
+                self.gradientView.layer.addSublayer(gradientLayer)
+                
         
         // Initialization code
+        
         
         
     }
