@@ -148,7 +148,22 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
 }
 
-    // ANIMATING TABLE VIEW CELLS
+    // ANIMATING TABLE VIEW CELLS (new)
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        cell.alpha = 0
+        cell.layer.transform = CATransform3DMakeScale(0.4,0.4,1)
+        UIView.animateWithDuration(1, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1,1,1)
+            cell.alpha = 1
+        })
+    }
+    
+    
+    
+    
+    // Animation (sliding from left) of cells
+    
 //    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
     
       //if cellShown[indexPath.row] == false {
