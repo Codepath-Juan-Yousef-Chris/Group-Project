@@ -95,16 +95,17 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         openingMonthLabel.text = openingMonth
         
         // Animating the picture
-        
-//        UIView.animateWithDuration(1) { () -> Void in
-//            self.galleryView.frame.size.height += 338
-//            self.galleryView.alpha = 1
-//        }
-        
-        UIView.animateWithDuration(1.1, delay: 0, usingSpringWithDamping: 12, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+//        
+        UIView.animateWithDuration(1) { () -> Void in
             self.galleryView.frame.size.height += 338
             self.galleryView.alpha = 1
-        }) { (Bool) -> Void in }
+        }
+        
+        
+//        UIView.animateWithDuration(1.1, delay: 0, usingSpringWithDamping: 12, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+//            self.galleryView.frame.size.height += 338
+//            self.galleryView.alpha = 1
+//        }) { (Bool) -> Void in }
 
         
 //        //TRYING ANIMATION WITH DAMPING
@@ -129,7 +130,7 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 //        }
         
         //TRYING ANIMATION OF LOWER VIEW WITH DAMPING
-        UIView.animateWithDuration(2, delay: 1, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: [], animations: { () -> Void in
+        UIView.animateWithDuration(2, delay: 0.9, usingSpringWithDamping: 0, initialSpringVelocity: 0, options: [], animations: { () -> Void in
             self.lowerView.frame.size.height -= 1438
 //           self.lowerView.alpha = 1
         }) { (Bool) -> Void in }
@@ -186,47 +187,47 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
 //            }, completion: nil)
         
         
-        //SUDDEN ANIMATION OF TEXT TO GO WITH DAMPING
-        
-        self.exhibitionNameLabel.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.exhibitionNameLabel.alpha = 1
-            }, completion: nil)
-        
-        self.lineView.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.lineView.alpha = 1
-            }, completion: nil)
-        
-        self.galleryLabelText.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.galleryLabelText.alpha = 1
-            }, completion: nil)
-        
-        self.shareButton.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.shareButton.alpha = 1
-            }, completion: nil)
-        
-        self.receptionTimeLabel.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.receptionTimeLabel.alpha = 1
-            }, completion: nil)
-        
-        self.artistsLabel.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.artistsLabel.alpha = 1
-            }, completion: nil)
-        
-        self.exhibitionDescriptionLabel.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.exhibitionDescriptionLabel.alpha = 1
-            }, completion: nil)
-        
-        self.galleryAdressLabel.alpha = 0
-        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
-            self.galleryAdressLabel.alpha = 1
-            }, completion: nil)
+//        //SUDDEN ANIMATION OF TEXT TO GO WITH DAMPING
+//        
+//        self.exhibitionNameLabel.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.exhibitionNameLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.lineView.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.lineView.alpha = 1
+//            }, completion: nil)
+//        
+//        self.galleryLabelText.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.galleryLabelText.alpha = 1
+//            }, completion: nil)
+//        
+//        self.shareButton.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.shareButton.alpha = 1
+//            }, completion: nil)
+//        
+//        self.receptionTimeLabel.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.receptionTimeLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.artistsLabel.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.artistsLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.exhibitionDescriptionLabel.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.exhibitionDescriptionLabel.alpha = 1
+//            }, completion: nil)
+//        
+//        self.galleryAdressLabel.alpha = 0
+//        UIView.animateWithDuration(0.1, delay: 2, options: UIViewAnimationOptions.CurveEaseIn, animations: { () -> Void in
+//            self.galleryAdressLabel.alpha = 1
+//            }, completion: nil)
         
         
         

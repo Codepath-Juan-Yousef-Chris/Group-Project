@@ -29,6 +29,8 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var parseClass: String!
     
+    //var cellShown = [Bool] (count: todayViewController.parseClass, repeatedValue: false)
+    
     
     override func loadView() {
         super.loadView()
@@ -147,17 +149,23 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
 }
 
     // ANIMATING TABLE VIEW CELLS
+//    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+//        
+//      //if cellShown[indexPath.row] == false {
+//        cell.alpha = 0
+//        
+////            let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 0, 0)
+////            cell.layer.transform = rotationTransform
+//        
+//            UIView.animateWithDuration(1, animations: { () -> Void in
+//                cell.layer.transform = CATransform3DIdentity
+//                
+//                cell.alpha = 1
+//           })
+//            //cellShown[indexPath.row] = true
+//    }
+ 
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-      
-        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, -500, 10, 0)
-        cell.layer.transform = rotationTransform
-        
-        UIView.animateWithDuration(0.5, animations: { () -> Void in
-           cell.layer.transform = CATransform3DIdentity
-        })
-    }
     
     
     
