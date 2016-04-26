@@ -51,7 +51,9 @@ class SettingsViewController: UIViewController {
             
         }
         
-        
+        colorDefaults.setObject("red", forKey: "backColor")
+        colorDefaults.setObject("green", forKey: "backColor")
+        colorDefaults.setObject("orange", forKey: "backColor")
 
         
         colorDefaults.synchronize()
@@ -71,9 +73,9 @@ class SettingsViewController: UIViewController {
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
         
-        colorDefaults.setObject(redColor, forKey: "red")
-        colorDefaults.setObject(greenColor, forKey: "green")
-        colorDefaults.setObject(orangeColor, forKey: "orange")
+        colorDefaults.setObject("red", forKey: "backColor")
+        colorDefaults.setObject("green", forKey: "backColor")
+        colorDefaults.setObject("orange", forKey: "backColor")
         
         colorDefaults.synchronize()
         
